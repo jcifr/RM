@@ -7,8 +7,11 @@ Welcome to Resistencia's documentation!
 =======================================
 
 .. toctree::
+   :numbered:
    :maxdepth: 2
    :caption: Contents:
+
+   Temas/Tema1/Tema1.rst
 
 
 
