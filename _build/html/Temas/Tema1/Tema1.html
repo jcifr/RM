@@ -58,6 +58,7 @@
 <li><a class="reference internal" href="#principio-de-saint-venant">1.7.3. Principio de Saint-Venant</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#relaciones-entre-tensiones-y-de-deformaciones">1.8. Relaciones entre tensiones y de deformaciones</a></li>
 </ul>
 </li>
 </ul>
@@ -539,7 +540,7 @@ por <span class="math notranslate nohighlight">\(\Delta\vec{r}\)</span> como:</p
     [D]\lim_{\vert\Delta\vec{r}\vert \to 0}\dfrac{\Delta\vec{r}}{\vert\Delta\vec{r}\vert}=
     [D]\dfrac{\vec{dr}}{\vert \vec{dr}\vert}=[D][\vec{u}]
 \end{equation}\]</div>
-<p>siendo <span class="math notranslate nohighlight">\(\vec{u}\)</span> el vector unitario en la dirección de :m^ath:<cite>vec{dr}</cite>.</p>
+<p>siendo <span class="math notranslate nohighlight">\(\vec{u}\)</span> el vector unitario en la dirección de <span class="math notranslate nohighlight">\(\vec{dr}\)</span>.</p>
 </div>
 <div class="section" id="principios-de-la-rm">
 <h2>1.7. Principios de la RM<a class="headerlink" href="#principios-de-la-rm" title="Enlazar permanentemente con este título">¶</a></h2>
@@ -576,6 +577,96 @@ sistemas de fuerzas que sean estáticamente equivalentes al dado.</p>
 <p class="caption"><span class="caption-number">Figura 1.8 </span><span class="caption-text">Principio de Saint-Venant</span></p>
 </div>
 </div>
+</div>
+<div class="section" id="relaciones-entre-tensiones-y-de-deformaciones">
+<h2>1.8. Relaciones entre tensiones y de deformaciones<a class="headerlink" href="#relaciones-entre-tensiones-y-de-deformaciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Dado que deformación y tensión son causa y efecto las matrices de tensiones y de
+deformación estén relacionadas entre sí.</p>
+<div class="figure align-center" id="id8" style="width: 80%">
+<span id="ensayoacero"></span><a class="reference internal image-reference" href="../../_images/9.jpg"><img alt="Concepto de deformación" src="../../_images/9.jpg" style="width: 338.8px; height: 322.8px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.9 </span><span class="caption-text">Ensayo de tracción en un probeta de acero</span></p>
+</div>
+<p>Se observa una zona de elasticidad proporcional en la que la relación tensión-deformación es lineal.</p>
+<dl class="glossary docutils">
+<dt id="term-ley-de-hooke">Ley de Hooke</dt>
+<dd></dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+    \sigma_{nx}=E\epsilon_x
+\end{equation}\]</div>
+<dl class="glossary docutils">
+<dt id="term-modulo-de-young">Módulo de Young</dt>
+<dd></dd>
+</dl>
+<p>También llamado módulo de elasticidad longitudinal. Tiene dimensiones de una
+tensión (<span class="math notranslate nohighlight">\([F ][L]^{−2}\)</span>) y es diferente para cada material.</p>
+<p>En el mismo ensayo a tracción se observa que simultáneamente al alargamiento de la probeta se produce un
+acortamiento de las dimensiones de la sección transversal. Para una pieza de sección rectangular (Fig. 1.20),
+las deformaciones transversales unitarias se rigen por las expresiones:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+        \begin{array}{l}
+    \varepsilon_y=-\mu\dfrac{\sigma_{nx}}{E}\\
+    \varepsilon_z=-\mu\dfrac{\sigma_{nx}}{E}
+    \end{array}
+\end{equation}\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\mu\)</span> es el</p>
+<dl class="glossary docutils">
+<dt id="term-coeficiente-de-poisson">Coeficiente de Poisson.</dt>
+<dd></dd>
+</dl>
+<p>Su valor para materiales isótropos es aproximadamente igual a 0,25. Para el acero dulce en deformaciones
+elásticas se suele tomar el valor k = 0,3.</p>
+<p>En ensayo a tracción se cumple que:  <span class="math notranslate nohighlight">\(\sigma_1=\sigma_{nx}\)</span>, <span class="math notranslate nohighlight">\(\sigma_2=\sigma_3=0\)</span>.</p>
+<p>Si consideramos ahora un estado elástico tridimensional, se demuestra que las direcciones principales
+de ambas matrices son coincidentes.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+    \left\{
+    \begin{array}{l}
+        \varepsilon_1=\dfrac{1}{E}[\sigma_1-\mu(\sigma_2+\sigma_3)]\\
+        \\
+        \varepsilon_2=\dfrac{1}{E}[\sigma_2-\mu(\sigma_1+\sigma_3)]\\
+        \\
+        \varepsilon_3=\dfrac{1}{E}[\sigma_3-\mu(\sigma_1+\sigma_2)]
+    \end{array}
+    \right.
+\end{equation}\end{split}\]</div>
+<p>Si el sistema de ejes coordenados no coincide con las direcciones principales, las relaciones
+entre las componentes de la matriz de tensiones [T] y de deformaciones [D] son:</p>
+<dl class="glossary docutils">
+<dt id="term-leyes-de-hooke-generalizadas">Leyes de Hooke generalizadas</dt>
+<dd></dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+    \left\{
+    \begin{array}{l}
+        \varepsilon_x=\dfrac{1}{E}[\sigma_{nx}-\mu(\sigma_{ny}+\sigma_{nz})]\\
+        \\
+        \varepsilon_y=\dfrac{1}{E}[\sigma_{ny}-\mu(\sigma_{nx}+\sigma_{nz})]\\
+        \\
+        \varepsilon_z=\dfrac{1}{E}[\sigma_{nz}-\mu(\sigma_{nx}+\sigma_{ny})]\\
+        \\
+        \gamma_{xy}=\dfrac{\tau_{xy}}{G}\\
+        \\
+        \gamma_{yz}=\dfrac{\tau_{yz}}{G}\\
+        \\
+        \gamma_{zx}=\dfrac{\tau_{zx}}{G}
+    \end{array}
+    \right.
+\end{equation}\end{split}\]</div>
+<p>en donde:</p>
+<dl class="glossary docutils">
+<dt id="term-modulo-de-elasticidad-transversal">Módulo de elasticidad transversal</dt>
+<dd></dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+    G=\dfrac{E}{2(1+\mu)}
+\end{equation}\]</div>
+<p>Tiene las mismas dimensiones  que E (<span class="math notranslate nohighlight">\([F ][L]^{−2}\)</span>) y es diferente para cada material.</p>
 </div>
 </div>
 

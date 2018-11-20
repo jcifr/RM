@@ -585,7 +585,7 @@ por :math:`\Delta\vec{r}` como:
     \end{equation}
 
 
-siendo :math:`\vec{u}` el vector unitario en la dirección de :m^ath:`\vec{dr}`.
+siendo :math:`\vec{u}` el vector unitario en la dirección de :math:`\vec{dr}`.
 
 Principios de la RM
 ___________________
@@ -644,7 +644,115 @@ sistemas de fuerzas que sean estáticamente equivalentes al dado.
 
    Principio de Saint-Venant
 
+Relaciones entre tensiones y de deformaciones
+_____________________________________________
+
+Dado que deformación y tensión son causa y efecto las matrices de tensiones y de
+deformación estén relacionadas entre sí.
+
+.. _ensayoacero:
+.. figure:: Figuras/9.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Ensayo de tracción en un probeta de acero
+
+Se observa una zona de elasticidad proporcional en la que la relación tensión-deformación es lineal.
+
+.. glossary::
+
+   Ley de Hooke
+
+.. math::
+    \begin{equation}
+        \sigma_{nx}=E\epsilon_x
+    \end{equation}
+
+.. glossary::
+
+   Módulo de Young
+
+También llamado módulo de elasticidad longitudinal. Tiene dimensiones de una
+tensión (:math:`[F ][L]^{−2}`) y es diferente para cada material.
+
+En el mismo ensayo a tracción se observa que simultáneamente al alargamiento de la probeta se produce un
+acortamiento de las dimensiones de la sección transversal. Para una pieza de sección rectangular (Fig. 1.20),
+las deformaciones transversales unitarias se rigen por las expresiones:
+
+.. math::
+    \begin{equation}
+            \begin{array}{l}
+        \varepsilon_y=-\mu\dfrac{\sigma_{nx}}{E}\\
+        \varepsilon_z=-\mu\dfrac{\sigma_{nx}}{E}
+        \end{array}
+    \end{equation}
+
+donde :math:`\mu` es el
+
+.. glossary::
+
+   Coeficiente de Poisson.
+
+Su valor para materiales isótropos es aproximadamente igual a 0,25. Para el acero dulce en deformaciones
+elásticas se suele tomar el valor k = 0,3.
+
+En ensayo a tracción se cumple que:  :math:`\sigma_1=\sigma_{nx}`, :math:`\sigma_2=\sigma_3=0`.
+
+Si consideramos ahora un estado elástico tridimensional, se demuestra que las direcciones principales
+de ambas matrices son coincidentes.
+
+.. math::
+    \begin{equation}
+        \left\{
+        \begin{array}{l}
+            \varepsilon_1=\dfrac{1}{E}[\sigma_1-\mu(\sigma_2+\sigma_3)]\\
+            \\
+            \varepsilon_2=\dfrac{1}{E}[\sigma_2-\mu(\sigma_1+\sigma_3)]\\
+            \\
+            \varepsilon_3=\dfrac{1}{E}[\sigma_3-\mu(\sigma_1+\sigma_2)]
+        \end{array}
+        \right.
+    \end{equation}
+
+Si el sistema de ejes coordenados no coincide con las direcciones principales, las relaciones
+entre las componentes de la matriz de tensiones [T] y de deformaciones [D] son:
+
+.. glossary::
+
+   Leyes de Hooke generalizadas
 
 
+.. math::
+    \begin{equation}
+        \left\{
+        \begin{array}{l}
+            \varepsilon_x=\dfrac{1}{E}[\sigma_{nx}-\mu(\sigma_{ny}+\sigma_{nz})]\\
+            \\
+            \varepsilon_y=\dfrac{1}{E}[\sigma_{ny}-\mu(\sigma_{nx}+\sigma_{nz})]\\
+            \\
+            \varepsilon_z=\dfrac{1}{E}[\sigma_{nz}-\mu(\sigma_{nx}+\sigma_{ny})]\\
+            \\
+            \gamma_{xy}=\dfrac{\tau_{xy}}{G}\\
+            \\
+            \gamma_{yz}=\dfrac{\tau_{yz}}{G}\\
+            \\
+            \gamma_{zx}=\dfrac{\tau_{zx}}{G}
+        \end{array}
+        \right.
+    \end{equation}
 
+en donde:
 
+.. glossary::
+
+   Módulo de elasticidad transversal
+
+.. math::
+
+    \begin{equation}
+        G=\dfrac{E}{2(1+\mu)}
+    \end{equation}
+
+Tiene las mismas dimensiones  que E (:math:`[F ][L]^{−2}`) y es diferente para cada material.
