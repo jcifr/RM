@@ -893,15 +893,184 @@ Dentro de las cargas:
 * Fuerzas de volumen: :math:`f_v`: en general será función de la posición del punto,
   sobre cada elemento de volumen dv del prisma estará aplicada la fuerza :math:`f_vdv`
 * Fuerzas de superficie: se aplican a la superficie exterior del prisma.
-    * Concentradas:
-    * Repartidas:
+    * Concentradas
+    * Repartidas
 
-En función de la continuidad de actuación sobre la estructura
+En función de la continuidad de actuación sobre la estructura:
 
 * Cargas permanentes
 * Cargas accidentales o sobrecargas
 
 Si existen o no fuerzas de inercia:
 
-* Cargas estáticas
+* Cargas estáticas
 * Cargas dinámicas
+
+Tipos de apoyos
+_______________
+
+En cada ligadura existe una reacción que, en general, estará formada por una fuerza y por un momento.
+Una sección no sometida a ligadura alguna tiene 6 g.d.l. (3 desplazamientos y 3 giros).
+
+.. _6impedidos:
+.. figure:: Figuras/14.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   6 g.d.l. impedidos
+
+.. _3impedidos:
+.. figure:: Figuras/15.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   3 g.d.l. impedidos (los desplazamientos)
+
+Apoyo articulado móvil
+^^^^^^^^^^^^^^^^^^^^^^
+
+Es libre el movimiento de la sección en la dirección del eje x y el giro en el plano xy.
+La reacción se reduce a una fuerza perpendicular al posible desplazamiento del apoyo.
+Equivale, por tanto, a una incógnita: el módulo de la reacción.
+
+.. _Apoyoarticuladomóvil:
+.. figure:: Figuras/16.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Apoyo articulado móvil
+
+Apoyo articulado fijo
+^^^^^^^^^^^^^^^^^^^^^
+
+Desplazamiento impedido tanto en la dirección del eje x como en la del eje y,
+pero el giro en el plano xy no lo está.
+La reacción es en este caso una fuerza de componentes :math:`RA_x` y :math:`RA_y`.
+Equivale a dos incógnitas.
+
+.. _Apoyoarticuladofijo:
+.. figure:: Figuras/17.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Apoyo articulado fijo
+
+Apoyo empotrado
+^^^^^^^^^^^^^^^
+
+Impedidos los desplazamientos en las direcciones de los ejes x e y, y el giro en el plano xy.
+La sección A del apoyo queda inmovilizada.
+
+La reacción se compone de una fuerza :math:`\vec{R_A}`, de componentes :math:`RA_x` y :math:`RA_y`,
+y de un momento :math:`\vec{M_A}` perpendicular al plano xy.
+Equivale a 3 incógnitas.
+
+.. _empotramiento:
+.. figure:: Figuras/18.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Empotramiento
+
+Sistemas isostáticos e hiperestáticos
+_____________________________________
+
+En general el número ecuaciones de que se dispone para determinar las correspondientes incógnitas son 6,
+(condiciones de equilibrio) de la pieza.
+Con secciones con plano medio de simetría  y las cargas contenidas en dicho plano,
+el número de ecuaciones disponibles disminuye a 3.
+
+.. glossary::
+
+   Sistemas isostáticos
+
+Sistemas tales que la sóla aplicación de las ecuaciones de la Estática permiten determinar
+las reacciones de las ligaduras.
+
+.. glossary::
+
+   Sistemas hiperestáticos
+
+Si existen ligaduras exteriores superabundantes, el número de incógnitas supera al de ecuaciones de equilibrio.
+Para la determinación de las reacciones será necesario hacer intervenir las deformaciones.
+
+.. glossary::
+
+   Grado de hiperestaticidad
+
+Es el exceso de incógnitas respecto al número de ecuaciones de equilibrio.
+
+.. _ejemploshiperestaticidad:
+.. figure:: Figuras/19.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   a ) g.h.=0 (isostático); b ) g.h.=1; c ) g.h.=1; d ) g.h.=2; e ) g.h.=3; f ) g.h.=0 (isostático)
+
+Coeficiente de seguridad y Tensión admisible
+____________________________________________
+
+.. glossary::
+
+   Tensión admisible
+
+.. math::
+
+    \begin{equation}
+        \sigma_{adm}=\frac{\sigma_{lim}}{n}
+    \end{equation}
+
+* Si materiales frágiles: :math:`\sigma{lim}=\sigma_{r}`
+* Si materiales dúctiles: :math:`\sigma{lim}=\sigma_{e}`
+
+.. glossary::
+
+   Coeficiente de seguridad
+
+n coeficiente de seguridad
+
+
+
+.. glossary::
+
+   Resistencia característica
+
+El valor tal que la probabilidad de obtener valores inferiores a él es del 5 por 100.
+Una vez obtenida la resistencia característica, se toma como tensión de cálculo :math:`\sigma_{u}`
+
+.. math::
+
+    \begin{equation}
+        \sigma_{y}=\frac{\text{resistencia caracteristica}}{\text{coeficiente de minoracion}}
+    \end{equation}
+
+Criterios de resistencia. Concepto de tensión equivalente
+_________________________________________________________
+
+.. glossary::
+
+   Tensión equivalente
+
+:math:`\sigma_{equiv}`: La que existiría en una probeta de ese material sometido a tracción tal que el coeficiente de seguridad del
+estado tensional dado y el de la probeta a tracción fuera el mismo.
+
+.. _tensionequivalente:
+.. figure:: Figuras/20.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Tensión equivalente

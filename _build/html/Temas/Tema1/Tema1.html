@@ -73,6 +73,15 @@
 <li><a class="reference internal" href="#relacion-entre-tension-y-de-deformacion-ensayo-de-traccion">1.8. Relación entre tensión y de deformación. Ensayo de tracción</a></li>
 <li><a class="reference internal" href="#esfuerzos-normal-y-cortante-y-momentos-de-flexion-y-de-torsion">1.9. Esfuerzos normal y cortante y momentos de flexión y de torsión</a></li>
 <li><a class="reference internal" href="#tipos-de-solicitaciones-exteriores">1.10. Tipos de solicitaciones exteriores</a></li>
+<li><a class="reference internal" href="#tipos-de-apoyos">1.11. Tipos de apoyos</a><ul>
+<li><a class="reference internal" href="#apoyo-articulado-movil">1.11.1. Apoyo articulado móvil</a></li>
+<li><a class="reference internal" href="#apoyo-articulado-fijo">1.11.2. Apoyo articulado fijo</a></li>
+<li><a class="reference internal" href="#apoyo-empotrado">1.11.3. Apoyo empotrado</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sistemas-isostaticos-e-hiperestaticos">1.12. Sistemas isostáticos e hiperestáticos</a></li>
+<li><a class="reference internal" href="#coeficiente-de-seguridad-y-tension-admisible">1.13. Coeficiente de seguridad y Tensión admisible</a></li>
+<li><a class="reference internal" href="#criterios-de-resistencia-concepto-de-tension-equivalente">1.14. Criterios de resistencia. Concepto de tensión equivalente</a></li>
 </ul>
 </li>
 </ul>
@@ -177,7 +186,7 @@ cualesquiera permanece invariable.</p>
 </dl>
 <p>Sólido engendrado por una sección plana <span class="math">\(\Sigma\)</span> de área  <span class="math">\(\Omega\)</span> cuyo centro de gravedad <em>G</em> describe una curva <em>c</em>
 llamada <em>línea media o directriz</em>, siendo el plano que contiene a <span class="math">\(\Sigma\)</span> normal a la curva (<a class="reference internal" href="#prismamecanico"><span class="std std-numref">Figura 1.1</span></a>).</p>
-<div class="figure align-center" id="id1" style="width: 80%">
+<div class="figure align-center" id="id2" style="width: 80%">
 <span id="prismamecanico"></span><a class="reference internal image-reference" href="../../_images/1.jpg"><img alt="Concepto de deformación" src="../../_images/1.jpg" style="width: 303.6px; height: 160.0px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.1 </span><span class="caption-text">Concepto de prisma mecánico</span></p>
 </div>
@@ -232,7 +241,7 @@ las fuerzas interiores de cohesión molecular.</p>
 </div>
 <div class="section" id="estado-de-tensiones">
 <h2>1.5. Estado  de tensiones<a class="headerlink" href="#estado-de-tensiones" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="figure align-center" id="id2" style="width: 80%">
+<div class="figure align-center" id="id3" style="width: 80%">
 <span id="estadodetesional"></span><a class="reference internal image-reference" href="../../_images/2.jpg"><img alt="Concepto de deformación" src="../../_images/2.jpg" style="width: 264.9px; height: 205.8px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.2 </span><span class="caption-text">Estado tensional de prisma mecánico</span></p>
 </div>
@@ -262,7 +271,7 @@ de un sistema cartesiano 0xyz, sobre cada una de sus caras existe un vector tens
 intrínsecas normales tendrán las direcciones de los ejes coordenados respectivos y las tangenciales
 se podrán descomponer a su vez en las direcciones de los dos ejes paralelos a la cara que se considere
 (<a class="reference internal" href="#estadodeenprisma"><span class="std std-numref">Figura 1.3</span></a>).</p>
-<div class="figure align-center" id="id3" style="width: 80%">
+<div class="figure align-center" id="id4" style="width: 80%">
 <span id="estadodeenprisma"></span><a class="reference internal image-reference" href="../../_images/3-1.jpg"><img alt="Concepto de deformación" src="../../_images/3-1.jpg" style="width: 467.95px; height: 265.3px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.3 </span><span class="caption-text">Tensiones sobre las caras del paralelépıpedo elemental:</span></p>
 </div>
@@ -478,7 +487,7 @@ El tensor de tensiones será diagonal.</p>
     \end{pmatrix}
 \end{equation}\end{split}\]</div>
 <p><span class="math">\(\vec{dr}\)</span>, pasa a <span class="math">\(\vec{dr'}\)</span> mediante los siguientes pasos (<a class="reference internal" href="#deformacion1"><span class="std std-numref">Figura 1.5</span></a>).:</p>
-<div class="figure align-center" id="id4" style="width: 80%">
+<div class="figure align-center" id="id5" style="width: 80%">
 <span id="deformacion1"></span><a class="reference internal image-reference" href="../../_images/5.jpg"><img alt="Concepto de deformación" src="../../_images/5.jpg" style="width: 348.95px; height: 159.95px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.5 </span><span class="caption-text">Transformación de <span class="math">\(\vec{dr}\)</span> a <span class="math">\(\vec{dr'}\)</span></span></p>
 </div>
@@ -561,7 +570,7 @@ por <span class="math">\(\Delta\vec{r}\)</span> como:</p>
 <p>Al aplicar el sistema exterior de fuerzas la forma del sólido no varía de forma significativa.
 Por ello, se expresan las condiciones de equilibrio como si el sólido deformado tuviera la misma forma y
 dimensiones que antes de producirse la deformación (<a class="reference internal" href="#prigidez"><span class="std std-numref">Figura 1.6</span></a>).</p>
-<div class="figure align-center" id="id5" style="width: 80%">
+<div class="figure align-center" id="id6" style="width: 80%">
 <span id="prigidez"></span><a class="reference internal image-reference" href="../../_images/6.jpg"><img alt="Concepto de deformación" src="../../_images/6.jpg" style="width: 553.35px; height: 163.45px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.6 </span><span class="caption-text">Principio de rigidez relativa</span></p>
 </div>
@@ -574,7 +583,7 @@ punto por cada fuerza actuando aisladamente.</p>
 <p>Excepciones:</p>
 <p>Los casos en los que no sea aplicable el principio de rigidez ni en los casos en los que los efectos de las
 fuerzas no sean independientes de las deformaciones como ocurre en la viga recta AB indicada en la (<a class="reference internal" href="#nosuperposicion"><span class="std std-numref">Figura 1.7</span></a>)</p>
-<div class="figure align-center" id="id6" style="width: 80%">
+<div class="figure align-center" id="id7" style="width: 80%">
 <span id="nosuperposicion"></span><a class="reference internal image-reference" href="../../_images/7.jpg"><img alt="Concepto de deformación" src="../../_images/7.jpg" style="width: 570.15px; height: 74.55px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.7 </span><span class="caption-text">Aquí no se cumple el principio de superposición</span></p>
 </div>
@@ -584,7 +593,7 @@ fuerzas no sean independientes de las deformaciones como ocurre en la viga recta
 <p>A partir de una distancia suficiente de los puntos de la superficie de un sólido elástico en los que está aplicado
 un determinado sistema de fuerzas, las tensiones y deformaciones son prácticamente iguales para todos los
 sistemas de fuerzas que sean estáticamente equivalentes al dado.</p>
-<div class="figure align-center" id="id7" style="width: 80%">
+<div class="figure align-center" id="id8" style="width: 80%">
 <span id="venant"></span><a class="reference internal image-reference" href="../../_images/8.jpg"><img alt="Concepto de deformación" src="../../_images/8.jpg" style="width: 330.05px; height: 198.8px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.8 </span><span class="caption-text">Principio de Saint-Venant</span></p>
 </div>
@@ -594,7 +603,7 @@ sistemas de fuerzas que sean estáticamente equivalentes al dado.</p>
 <h2>1.8. Relación entre tensión y de deformación. Ensayo de tracción<a class="headerlink" href="#relacion-entre-tension-y-de-deformacion-ensayo-de-traccion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Dado que deformación y tensión son causa y efecto las matrices de tensiones y de
 deformación estén relacionadas entre sí.</p>
-<div class="figure align-center" id="id8" style="width: 80%">
+<div class="figure align-center" id="id9" style="width: 80%">
 <span id="ensayoacero"></span><a class="reference internal image-reference" href="../../_images/9.jpg"><img alt="Concepto de deformación" src="../../_images/9.jpg" style="width: 338.8px; height: 322.8px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.9 </span><span class="caption-text">Ensayo de tracción en un probeta de acero</span></p>
 </div>
@@ -676,11 +685,11 @@ entre las componentes de la matriz de tensiones [T] y de deformaciones [D] son:<
 </div>
 <div class="section" id="esfuerzos-normal-y-cortante-y-momentos-de-flexion-y-de-torsion">
 <h2>1.9. Esfuerzos normal y cortante y momentos de flexión y de torsión<a class="headerlink" href="#esfuerzos-normal-y-cortante-y-momentos-de-flexion-y-de-torsion" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="figure align-center" id="id9" style="width: 80%">
+<div class="figure align-center" id="id10" style="width: 80%">
 <span id="solidosolicitaciones"></span><a class="reference internal image-reference" href="../../_images/10.jpg"><img alt="Concepto de deformación" src="../../_images/10.jpg" style="width: 300.0px; height: 214.4px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.10 </span><span class="caption-text">Sólido rígido sometido a diversas solicitaciones</span></p>
 </div>
-<div class="figure align-center" id="id10" style="width: 80%">
+<div class="figure align-center" id="id11" style="width: 80%">
 <span id="resultante"></span><a class="reference internal image-reference" href="../../_images/11.jpg"><img alt="Concepto de deformación" src="../../_images/11.jpg" style="width: 300.0px; height: 249.2px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.11 </span><span class="caption-text">Resultante debida a la parte eliminada</span></p>
 </div>
@@ -703,7 +712,7 @@ empujar o separar a ambas partes del prisma dando lugar a esfuerzos de compresi�
     \vec{T}=T_y\vec{j}+T_z\vec{k}
 \end{equation}\]</div>
 <p>T, esfuerzo que actúa tangencialmente a la superficie de la sección.</p>
-<div class="figure align-center" id="id11" style="width: 80%">
+<div class="figure align-center" id="id12" style="width: 80%">
 <span id="resultantemomentos"></span><a class="reference internal image-reference" href="../../_images/12.jpg"><img alt="Concepto de deformación" src="../../_images/12.jpg" style="width: 280.4px; height: 240.8px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.12 </span><span class="caption-text">Momentos debidos a la parte eliminada</span></p>
 </div>
@@ -726,7 +735,7 @@ empujar o separar a ambas partes del prisma dando lugar a esfuerzos de compresi�
 \end{equation}\]</div>
 <p><span class="math">\(M_F\)</span>: <span class="math">\(M_y\)</span> y <span class="math">\(M_z\)</span> tienden a obligar al sólido a girar lateralmente curvándolo en los planos xz y xy.
 Momentos flectores.</p>
-<div class="figure align-center" id="id12" style="width: 80%">
+<div class="figure align-center" id="id13" style="width: 80%">
 <span id="relacion"></span><a class="reference internal image-reference" href="../../_images/13.jpg"><img alt="Concepto de deformación" src="../../_images/13.jpg" style="width: 317.6px; height: 232.4px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.13 </span><span class="caption-text">Relación entre R, M y la matriz de tensiones</span></p>
 </div>
@@ -778,23 +787,140 @@ sobre cada elemento de volumen dv del prisma estará aplicada la fuerza <span cl
 <li><dl class="first docutils">
 <dt>Fuerzas de superficie: se aplican a la superficie exterior del prisma.</dt>
 <dd><ul class="first last">
-<li>Concentradas:</li>
-<li>Repartidas:</li>
+<li>Concentradas</li>
+<li>Repartidas</li>
 </ul>
 </dd>
 </dl>
 </li>
 </ul>
-<p>En función de la continuidad de actuación sobre la estructura</p>
+<p>En función de la continuidad de actuación sobre la estructura:</p>
 <ul class="simple">
 <li>Cargas permanentes</li>
 <li>Cargas accidentales o sobrecargas</li>
 </ul>
 <p>Si existen o no fuerzas de inercia:</p>
 <ul class="simple">
-<li>Cargas estáticas</li>
+<li>Cargas estáticas</li>
 <li>Cargas dinámicas</li>
 </ul>
+</div>
+<div class="section" id="tipos-de-apoyos">
+<h2>1.11. Tipos de apoyos<a class="headerlink" href="#tipos-de-apoyos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En cada ligadura existe una reacción que, en general, estará formada por una fuerza y por un momento.
+Una sección no sometida a ligadura alguna tiene 6 g.d.l. (3 desplazamientos y 3 giros).</p>
+<div class="figure align-center" id="id14" style="width: 80%">
+<span id="impedidos"></span><a class="reference internal image-reference" href="../../_images/14.jpg"><img alt="Concepto de deformación" src="../../_images/14.jpg" style="width: 337.2px; height: 254.0px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.14 </span><span class="caption-text">6 g.d.l. impedidos</span></p>
+</div>
+<div class="figure align-center" id="id15" style="width: 80%">
+<span id="id1"></span><a class="reference internal image-reference" href="../../_images/15.jpg"><img alt="Concepto de deformación" src="../../_images/15.jpg" style="width: 259.6px; height: 228.4px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.15 </span><span class="caption-text">3 g.d.l. impedidos (los desplazamientos)</span></p>
+</div>
+<div class="section" id="apoyo-articulado-movil">
+<h3>1.11.1. Apoyo articulado móvil<a class="headerlink" href="#apoyo-articulado-movil" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Es libre el movimiento de la sección en la dirección del eje x y el giro en el plano xy.
+La reacción se reduce a una fuerza perpendicular al posible desplazamiento del apoyo.
+Equivale, por tanto, a una incógnita: el módulo de la reacción.</p>
+<div class="figure align-center" id="id16" style="width: 80%">
+<span id="apoyoarticuladomovil"></span><a class="reference internal image-reference" href="../../_images/16.jpg"><img alt="Concepto de deformación" src="../../_images/16.jpg" style="width: 472.8px; height: 194.4px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.16 </span><span class="caption-text">Apoyo articulado móvil</span></p>
+</div>
+</div>
+<div class="section" id="apoyo-articulado-fijo">
+<h3>1.11.2. Apoyo articulado fijo<a class="headerlink" href="#apoyo-articulado-fijo" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Desplazamiento impedido tanto en la dirección del eje x como en la del eje y,
+pero el giro en el plano xy no lo está.
+La reacción es en este caso una fuerza de componentes <span class="math">\(RA_x\)</span> y <span class="math">\(RA_y\)</span>.
+Equivale a dos incógnitas.</p>
+<div class="figure align-center" id="id17" style="width: 80%">
+<span id="apoyoarticuladofijo"></span><a class="reference internal image-reference" href="../../_images/17.jpg"><img alt="Concepto de deformación" src="../../_images/17.jpg" style="width: 486.0px; height: 185.6px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.17 </span><span class="caption-text">Apoyo articulado fijo</span></p>
+</div>
+</div>
+<div class="section" id="apoyo-empotrado">
+<h3>1.11.3. Apoyo empotrado<a class="headerlink" href="#apoyo-empotrado" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Impedidos los desplazamientos en las direcciones de los ejes x e y, y el giro en el plano xy.
+La sección A del apoyo queda inmovilizada.</p>
+<p>La reacción se compone de una fuerza <span class="math">\(\vec{R_A}\)</span>, de componentes <span class="math">\(RA_x\)</span> y <span class="math">\(RA_y\)</span>,
+y de un momento <span class="math">\(\vec{M_A}\)</span> perpendicular al plano xy.
+Equivale a 3 incógnitas.</p>
+<div class="figure align-center" id="id18" style="width: 80%">
+<span id="empotramiento"></span><a class="reference internal image-reference" href="../../_images/18.jpg"><img alt="Concepto de deformación" src="../../_images/18.jpg" style="width: 464.4px; height: 168.0px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.18 </span><span class="caption-text">Empotramiento</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="sistemas-isostaticos-e-hiperestaticos">
+<h2>1.12. Sistemas isostáticos e hiperestáticos<a class="headerlink" href="#sistemas-isostaticos-e-hiperestaticos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En general el número ecuaciones de que se dispone para determinar las correspondientes incógnitas son 6,
+(condiciones de equilibrio) de la pieza.
+Con secciones con plano medio de simetría  y las cargas contenidas en dicho plano,
+el número de ecuaciones disponibles disminuye a 3.</p>
+<dl class="glossary docutils">
+<dt id="term-sistemas-isostaticos">Sistemas isostáticos</dt>
+<dd></dd>
+</dl>
+<p>Sistemas tales que la sóla aplicación de las ecuaciones de la Estática permiten determinar
+las reacciones de las ligaduras.</p>
+<dl class="glossary docutils">
+<dt id="term-sistemas-hiperestaticos">Sistemas hiperestáticos</dt>
+<dd></dd>
+</dl>
+<p>Si existen ligaduras exteriores superabundantes, el número de incógnitas supera al de ecuaciones de equilibrio.
+Para la determinación de las reacciones será necesario hacer intervenir las deformaciones.</p>
+<dl class="glossary docutils">
+<dt id="term-grado-de-hiperestaticidad">Grado de hiperestaticidad</dt>
+<dd></dd>
+</dl>
+<p>Es el exceso de incógnitas respecto al número de ecuaciones de equilibrio.</p>
+<div class="figure align-center" id="id19" style="width: 80%">
+<span id="ejemploshiperestaticidad"></span><a class="reference internal image-reference" href="../../_images/19.jpg"><img alt="Concepto de deformación" src="../../_images/19.jpg" style="width: 638.4px; height: 286.8px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.19 </span><span class="caption-text">a ) g.h.=0 (isostático); b ) g.h.=1; c ) g.h.=1; d ) g.h.=2; e ) g.h.=3; f ) g.h.=0 (isostático)</span></p>
+</div>
+</div>
+<div class="section" id="coeficiente-de-seguridad-y-tension-admisible">
+<h2>1.13. Coeficiente de seguridad y Tensión admisible<a class="headerlink" href="#coeficiente-de-seguridad-y-tension-admisible" title="Enlazar permanentemente con este título">¶</a></h2>
+<dl class="glossary docutils">
+<dt id="term-tension-admisible">Tensión admisible</dt>
+<dd></dd>
+</dl>
+<div class="math">
+\[\begin{equation}
+    \sigma_{adm}=\frac{\sigma_{lim}}{n}
+\end{equation}\]</div>
+<ul class="simple">
+<li>Si materiales frágiles: <span class="math">\(\sigma{lim}=\sigma_{r}\)</span></li>
+<li>Si materiales dúctiles: <span class="math">\(\sigma{lim}=\sigma_{e}\)</span></li>
+</ul>
+<dl class="glossary docutils">
+<dt id="term-coeficiente-de-seguridad">Coeficiente de seguridad</dt>
+<dd></dd>
+</dl>
+<p>n coeficiente de seguridad</p>
+<dl class="glossary docutils">
+<dt id="term-resistencia-caracteristica">Resistencia característica</dt>
+<dd></dd>
+</dl>
+<p>El valor tal que la probabilidad de obtener valores inferiores a él es del 5 por 100.
+Una vez obtenida la resistencia característica, se toma como tensión de cálculo <span class="math">\(\sigma_{u}\)</span></p>
+<div class="math">
+\[\begin{equation}
+    \sigma_{y}=\frac{\text{resistencia caracteristica}}{\text{coeficiente de minoracion}}
+\end{equation}\]</div>
+</div>
+<div class="section" id="criterios-de-resistencia-concepto-de-tension-equivalente">
+<h2>1.14. Criterios de resistencia. Concepto de tensión equivalente<a class="headerlink" href="#criterios-de-resistencia-concepto-de-tension-equivalente" title="Enlazar permanentemente con este título">¶</a></h2>
+<dl class="glossary docutils">
+<dt id="term-tension-equivalente">Tensión equivalente</dt>
+<dd></dd>
+</dl>
+<p><span class="math">\(\sigma_{equiv}\)</span>: La que existiría en una probeta de ese material sometido a tracción tal que el coeficiente de seguridad del
+estado tensional dado y el de la probeta a tracción fuera el mismo.</p>
+<div class="figure align-center" id="id20" style="width: 80%">
+<span id="tensionequivalente"></span><a class="reference internal image-reference" href="../../_images/20.jpg"><img alt="Concepto de deformación" src="../../_images/20.jpg" style="width: 341.6px; height: 178.4px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.20 </span><span class="caption-text">Tensión equivalente</span></p>
+</div>
 </div>
 </div>
 
