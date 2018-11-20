@@ -2,31 +2,20 @@
 
 <!doctype html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>1. Introducción &#8212; documentación de Resistencia - 1</title>
-    
     <link rel="stylesheet" href="../../_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../../',
-        VERSION:     '1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/translations.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../../_static/bizstyle.js"></script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
@@ -35,8 +24,7 @@
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
     <![endif]-->
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegación</h3>
       <ul>
@@ -51,7 +39,7 @@
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../../index.html">Tabla de Contenidos</a></h3>
+  <h3><a href="../../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">1. Introducción</a><ul>
 <li><a class="reference internal" href="#objeto-de-la-rm">1.1. Objeto de la RM</a></li>
@@ -64,13 +52,19 @@
 </li>
 <li><a class="reference internal" href="#estado-de-tensiones">1.5. Estado  de tensiones</a></li>
 <li><a class="reference internal" href="#estado-de-deformacion">1.6. Estado  de deformación</a></li>
+<li><a class="reference internal" href="#principios-de-la-rm">1.7. Principios de la RM</a><ul>
+<li><a class="reference internal" href="#principio-de-rigidez-relativa-de-los-sistemas-elasticos">1.7.1. Principio de rigidez relativa de los sistemas elásticos</a></li>
+<li><a class="reference internal" href="#principio-de-superposicion-de-efectos">1.7.2. Principio de superposición de efectos</a></li>
+<li><a class="reference internal" href="#principio-de-saint-venant">1.7.3. Principio de Saint-Venant</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 
   <h4>Tema anterior</h4>
   <p class="topless"><a href="../../index.html"
-                        title="capítulo anterior">Welcome to Resistencia&#8217;s documentation!</a></p>
+                        title="capítulo anterior">Welcome to Resistencia’s documentation!</a></p>
   <div role="note" aria-label="source link">
     <h3>Esta página</h3>
     <ul class="this-page-menu">
@@ -80,12 +74,14 @@
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Búsqueda rápida</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Ir a" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -166,8 +162,8 @@ cualesquiera permanece invariable.</p>
 <dt id="term-prisma-mecanico">Prisma Mecánico</dt>
 <dd></dd>
 </dl>
-<p>Sólido engendrado por una sección plana <span class="math">\(\Sigma\)</span> de área  <span class="math">\(\Omega\)</span> cuyo centro de gravedad <em>G</em> describe una curva <em>c</em>
-llamada <em>línea media o directriz</em>, siendo el plano que contiene a <span class="math">\(\Sigma\)</span> normal a la curva (<a class="reference internal" href="#prismamecanico"><span class="std std-numref">Figura 1.1</span></a>).</p>
+<p>Sólido engendrado por una sección plana <span class="math notranslate nohighlight">\(\Sigma\)</span> de área  <span class="math notranslate nohighlight">\(\Omega\)</span> cuyo centro de gravedad <em>G</em> describe una curva <em>c</em>
+llamada <em>línea media o directriz</em>, siendo el plano que contiene a <span class="math notranslate nohighlight">\(\Sigma\)</span> normal a la curva (<a class="reference internal" href="#prismamecanico"><span class="std std-numref">Figura 1.1</span></a>).</p>
 <div class="figure align-center" id="id1" style="width: 80%">
 <span id="prismamecanico"></span><a class="reference internal image-reference" href="../../_images/1.jpg"><img alt="Concepto de deformación" src="../../_images/1.jpg" style="width: 303.6px; height: 160.0px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.1 </span><span class="caption-text">Concepto de prisma mecánico</span></p>
@@ -178,7 +174,7 @@ llamada <em>línea media o directriz</em>, siendo el plano que contiene a <span 
 <li>Plano: Línea media en un plano</li>
 <li>Recto: Línea media recta</li>
 </ul>
-<p>Si <span class="math">\(\Sigma\)</span> constante: prisma de sección constante, si no, prisma de sección variable.</p>
+<p>Si <span class="math notranslate nohighlight">\(\Sigma\)</span> constante: prisma de sección constante, si no, prisma de sección variable.</p>
 <p>Tipos:</p>
 <ul class="simple">
 <li>Barra. Se llama así al prisma mecánico cuyas dimensiones de la sección transversal son pequeñas en comparación
@@ -194,8 +190,8 @@ dos dimensiones</li>
 <div class="section" id="equilibrio-estatico">
 <h3>1.4.1. Equilibrio estático<a class="headerlink" href="#equilibrio-estatico" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Condiciones generales del equilibrio estático (necesarias y suficientes):</p>
-<div class="math" id="equation-equilibrioestatico">
-<span class="eqno">(1)<a class="headerlink" href="#equation-equilibrioestatico" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<div class="math notranslate nohighlight" id="equation-equilibrioestatico">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-equilibrioestatico" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \left.
          \begin{array}{lllll}
              R_{x}=0 &amp;; &amp;    R_{y}=0&amp; ;   &amp;  R_{z}=0\\
@@ -224,30 +220,30 @@ las fuerzas interiores de cohesión molecular.</p>
 <div class="section" id="estado-de-tensiones">
 <h2>1.5. Estado  de tensiones<a class="headerlink" href="#estado-de-tensiones" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="figure align-center" id="id2" style="width: 80%">
-<span id="estadodetesional"></span><a class="reference internal image-reference" href="../../_images/2.jpg"><img alt="Concepto de deformación" src="../../_images/2.jpg" style="width: 264.9px; height: 205.8px;" /></a>
+<span id="estadodetesional"></span><a class="reference internal image-reference" href="../../_images/2.jpg"><img alt="Concepto de deformación" src="../../_images/2.jpg" style="width: 264.9px; height: 205.79999999999998px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.2 </span><span class="caption-text">Estado tensional de prisma mecánico</span></p>
 </div>
 <dl class="glossary docutils">
 <dt id="term-tension">Tensión</dt>
 <dd></dd>
 </dl>
-<p>Se define como tensión en el punto P según el plano <span class="math">\(\pi\)</span> al siguiente límite:</p>
-<div class="math" id="equation-deftension">
-<span class="eqno">(2)<a class="headerlink" href="#equation-deftension" title="Enlace permanente a esta ecuación">¶</a></span>\[ \begin{equation}
+<p>Se define como tensión en el punto P según el plano <span class="math notranslate nohighlight">\(\pi\)</span> al siguiente límite:</p>
+<div class="math notranslate nohighlight" id="equation-deftension">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-deftension" title="Enlace permanente a esta ecuación">¶</a></span>\[ \begin{equation}
      \vec{\sigma}=\lim_{\Delta \Omega \to 0}\dfrac{\Delta \vec{f}}{d\Omega}=\dfrac{d \vec{f}}{d\Omega}
  \end{equation}\]</div>
 <dl class="glossary docutils">
 <dt id="term-tension-normal">Tensión normal</dt>
 <dd></dd>
 </dl>
-<p>La componente de <span class="math">\(\sigma\)</span>, según la normal al plano <span class="math">\(\pi\)</span>.se representa por <span class="math">\(\sigma_n\)</span></p>
+<p>La componente de <span class="math notranslate nohighlight">\(\sigma\)</span>, según la normal al plano <span class="math notranslate nohighlight">\(\pi\)</span>.se representa por <span class="math notranslate nohighlight">\(\sigma_n\)</span></p>
 <dl class="glossary docutils">
 <dt id="term-tension-tangencial">Tensión tangencial</dt>
 <dd></dd>
 </dl>
-<p>Proyección de <span class="math">\(\sigma\)</span> sobre el plano <span class="math">\(\pi\)</span>. También se llama <em>tensión cortante</em> y
-se representa por <span class="math">\(\tau\)</span></p>
-<p><span class="math">\(\sigma_n\)</span> y <span class="math">\(\tau\)</span> son las componentes intrínsecas de <span class="math">\(\sigma\)</span></p>
+<p>Proyección de <span class="math notranslate nohighlight">\(\sigma\)</span> sobre el plano <span class="math notranslate nohighlight">\(\pi\)</span>. También se llama <em>tensión cortante</em> y
+se representa por <span class="math notranslate nohighlight">\(\tau\)</span></p>
+<p><span class="math notranslate nohighlight">\(\sigma_n\)</span> y <span class="math notranslate nohighlight">\(\tau\)</span> son las componentes intrínsecas de <span class="math notranslate nohighlight">\(\sigma\)</span></p>
 <p>Si ahora consideramos el entorno de un punto P interior del prisma de aristas paralelas a los ejes
 de un sistema cartesiano 0xyz, sobre cada una de sus caras existe un vector tensión cuyas componentes
 intrínsecas normales tendrán las direcciones de los ejes coordenados respectivos y las tangenciales
@@ -258,55 +254,55 @@ se podrán descomponer a su vez en las direcciones de los dos ejes paralelos a l
 <p class="caption"><span class="caption-number">Figura 1.3 </span><span class="caption-text">Tensiones sobre las caras del paralelépıpedo elemental:</span></p>
 </div>
 <p>Las tensiones en las caras normales a los ejes x, y z son:</p>
-<div class="math" id="equation-tensionesnormalejex">
-<span class="eqno">(3)<a class="headerlink" href="#equation-tensionesnormalejex" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<div class="math notranslate nohighlight" id="equation-tensionesnormalejex">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-tensionesnormalejex" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \begin{split}
          \sigma_{nx}^{*} &amp; = \sigma_{nx}+\dfrac{\partial\sigma_{nx}}{\partial x}dx \\
          \tau_{xy}^{*} &amp; = \tau_{xy}+\dfrac{\partial\tau_{xy}}{\partial x}dx \\
          \tau_{xz}^{*} &amp; = \tau_{xz}+\dfrac{\partial\tau_{xz}}{\partial x}dx \\
      \end{split}
  \end{equation}\end{split}\]</div>
-<div class="math" id="equation-tensionesnormalejey">
-<span class="eqno">(4)<a class="headerlink" href="#equation-tensionesnormalejey" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<div class="math notranslate nohighlight" id="equation-tensionesnormalejey">
+<span class="eqno">(1.4)<a class="headerlink" href="#equation-tensionesnormalejey" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \begin{split}
          \sigma_{ny}^{*} &amp; = \sigma_{ny}+\dfrac{\partial\sigma_{ny}}{\partial y}dy \\
          \tau_{yx}^{*} &amp; = \tau_{yx}+\dfrac{\partial\tau_{yx}}{\partial y}dy \\
          \tau_{yz}^{*} &amp; = \tau_{yz}+\dfrac{\partial\tau_{yz}}{\partial y}dy \\
      \end{split}
  \end{equation}\end{split}\]</div>
-<div class="math" id="equation-tensionesnormalejez">
-<span class="eqno">(5)<a class="headerlink" href="#equation-tensionesnormalejez" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<div class="math notranslate nohighlight" id="equation-tensionesnormalejez">
+<span class="eqno">(1.5)<a class="headerlink" href="#equation-tensionesnormalejez" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \begin{split}
          \sigma_{nz}^{*} &amp; = \sigma_{nz}+\dfrac{\partial\sigma_{nz}}{\partial z}dz \\
          \tau_{zx}^{*} &amp; = \tau_{zx}+\dfrac{\partial\tau_{zx}}{\partial z}dz \\
          \tau_{zy}^{*} &amp; = \tau_{zy}+\dfrac{\partial\tau_{zy}}{\partial z}dz \\
      \end{split}
  \end{equation}\end{split}\]</div>
-<p>También sobre el paralelepípedo actúan fuerzas de masa por unidad de volumen <span class="math">\(f_v\)</span>,
-y componentes cartesianas <span class="math">\(f_x\)</span>, <span class="math">\(f_y\)</span>, <span class="math">\(f_z\)</span>.</p>
+<p>También sobre el paralelepípedo actúan fuerzas de masa por unidad de volumen <span class="math notranslate nohighlight">\(f_v\)</span>,
+y componentes cartesianas <span class="math notranslate nohighlight">\(f_x\)</span>, <span class="math notranslate nohighlight">\(f_y\)</span>, <span class="math notranslate nohighlight">\(f_z\)</span>.</p>
 <p>Planteando las condiciones de equilibrio estático del paralelepípedo aislado,
 del equilibrio de fuerzas se obtienen las ecuaciones de equilibrio interno:</p>
-<div class="math" id="equation-equilibriointerno">
-<span class="eqno">(6)<a class="headerlink" href="#equation-equilibriointerno" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<div class="math notranslate nohighlight" id="equation-equilibriointerno">
+<span class="eqno">(1.6)<a class="headerlink" href="#equation-equilibriointerno" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \begin{split}
          (\sigma_{nx}^{*}-\sigma_{nx})dydz+(\tau_{yx}^{*}-\tau_{yx} )dzdx+(\tau_{zx}^{*}-\tau_{zx})dxdy+f_x dxdydz=0 \\
          (\tau_{nx}^{*}-\tau_{nx} )dydz+(\sigma_{ny}^{*}-\sigma_{ny})dzdx+(\tau_{zy}^{*}-\tau_{zy})dxdy+f_y dxdydz=0 \\
          (\tau_{xz}^{*}-\tau_{xz} )dydz+(\tau_{yz}^{*}-\tau_{yz})dzdx+(\sigma_{nz}^{*}-\sigma_{nz})dxdy+f_z dxdydz=0 \\
      \end{split}
  \end{equation}\end{split}\]</div>
-<p>Sustituyendo <a class="reference internal" href="#equation-tensionesnormalejex">(3)</a>, <a class="reference internal" href="#equation-tensionesnormalejey">(4)</a> y <a class="reference internal" href="#equation-tensionesnormalejez">(5)</a> en <a class="reference internal" href="#equation-equilibriointerno">(6)</a>
+<p>Sustituyendo <a class="reference internal" href="#equation-tensionesnormalejex">(1.3)</a>, <a class="reference internal" href="#equation-tensionesnormalejey">(1.4)</a> y <a class="reference internal" href="#equation-tensionesnormalejez">(1.5)</a> en <a class="reference internal" href="#equation-equilibriointerno">(1.6)</a>
 se llega a:</p>
-<div class="math" id="equation-equilibriointerno1">
-<span class="eqno">(7)<a class="headerlink" href="#equation-equilibriointerno1" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<div class="math notranslate nohighlight" id="equation-equilibriointerno1">
+<span class="eqno">(1.7)<a class="headerlink" href="#equation-equilibriointerno1" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \begin{split}
          f_x+\dfrac{\partial\sigma_{nx}}{\partial x}+\dfrac{\partial\tau_{xy}}{\partial x} +\dfrac{\partial\tau_{xz}}{\partial z} &amp; = 0 \\
          f_y+\dfrac{\partial\tau_{yx}}{\partial x} +\dfrac{\partial\sigma_{ny}}{\partial y}+\dfrac{\partial\tau_{yz}}{\partial z} &amp; = 0 \\
          f_z+\dfrac{\partial\tau_{zx}}{\partial x} +\dfrac{\partial\tau_{zy}}{\partial y} +\dfrac{\partial\sigma_{nz}}{\partial z} &amp; = 0 \\
      \end{split}
  \end{equation}\end{split}\]</div>
-<p>Tomando momentos respecto a los ejes &#8220;x&#8221;, &#8220;y&#8221; y &#8220;z&#8221; y planteando el equilibrio se tiene que:</p>
-<div class="math" id="equation-equilibriodemomentos">
-<span class="eqno">(8)<a class="headerlink" href="#equation-equilibriodemomentos" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<p>Tomando momentos respecto a los ejes «x», «y» y «z» y planteando el equilibrio se tiene que:</p>
+<div class="math notranslate nohighlight" id="equation-equilibriodemomentos">
+<span class="eqno">(1.8)<a class="headerlink" href="#equation-equilibriodemomentos" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \begin{split}
          (\tau_{yz}dxdz)dy- (\tau_{zy}dxdy)dz&amp; = 0 \\
          (\tau_{zx}dxdy)dy- (\tau_{zx}dxdy)dz&amp; = 0 \\
@@ -314,25 +310,25 @@ se llega a:</p>
      \end{split}
  \end{equation}\end{split}\]</div>
 <p>de donde:</p>
-<div class="math" id="equation-tensionestang">
-<span class="eqno">(9)<a class="headerlink" href="#equation-tensionestang" title="Enlace permanente a esta ecuación">¶</a></span>\[ \begin{equation}
+<div class="math notranslate nohighlight" id="equation-tensionestang">
+<span class="eqno">(1.9)<a class="headerlink" href="#equation-tensionestang" title="Enlace permanente a esta ecuación">¶</a></span>\[ \begin{equation}
      \left.
      \begin{array}{lllll}
          \tau_{yz}=\tau_{zy}&amp; ;&amp; \tau_{zx}=\tau_{xz}&amp; ;&amp; \tau_{xy}=\tau_{yx}
      \end{array}
      \right.
  \end{equation}\]</div>
-<p>La expresión <a class="reference internal" href="#equation-tensionestang">(9)</a> es conocida como el <em>teorema de reciprocidad de las tensiones tangenciales</em>:
+<p>La expresión <a class="reference internal" href="#equation-tensionestang">(1.9)</a> es conocida como el <em>teorema de reciprocidad de las tensiones tangenciales</em>:
 las componentes de las tensiones cortantes en un punto correspondientes a dos planos perpendiculares,
 en dirección normal a la arista de su diedro, son iguales.</p>
 <p>De los 9 valores que definen el estado tensional de un punto, 6 son independientes.</p>
-<p><span class="math">\(\sigma_{nx}\)</span>,  <span class="math">\(\sigma_{ny}\)</span>, <span class="math">\(\sigma_{nz}\)</span>, <span class="math">\(\tau_{xy}\)</span>, <span class="math">\(\tau_{xz}\)</span> y <span class="math">\(\tau_{yz}\)</span></p>
-<p>El conocimiento de los mismos permite conocer el vector tensión <span class="math">\(\vec{\sigma}\)</span> (<span class="math">\(\sigma_{x}\)</span>, <span class="math">\(\sigma_{y}\)</span>, <span class="math">\(\sigma_{z}\)</span>)
+<p><span class="math notranslate nohighlight">\(\sigma_{nx}\)</span>,  <span class="math notranslate nohighlight">\(\sigma_{ny}\)</span>, <span class="math notranslate nohighlight">\(\sigma_{nz}\)</span>, <span class="math notranslate nohighlight">\(\tau_{xy}\)</span>, <span class="math notranslate nohighlight">\(\tau_{xz}\)</span> y <span class="math notranslate nohighlight">\(\tau_{yz}\)</span></p>
+<p>El conocimiento de los mismos permite conocer el vector tensión <span class="math notranslate nohighlight">\(\vec{\sigma}\)</span> (<span class="math notranslate nohighlight">\(\sigma_{x}\)</span>, <span class="math notranslate nohighlight">\(\sigma_{y}\)</span>, <span class="math notranslate nohighlight">\(\sigma_{z}\)</span>)
 correspondiente a una orientación genérica
-definida por el vector unitario normal <span class="math">\(\vec{u}\)</span>, (<span class="math">\(\alpha\)</span>, <span class="math">\(\beta\)</span>, <span class="math">\(\gamma\)</span>)
+definida por el vector unitario normal <span class="math notranslate nohighlight">\(\vec{u}\)</span>, (<span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\gamma\)</span>)
 mediante la expresión:</p>
-<div class="math" id="equation-tensionesmatricial">
-<span class="eqno">(10)<a class="headerlink" href="#equation-tensionesmatricial" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<div class="math notranslate nohighlight" id="equation-tensionesmatricial">
+<span class="eqno">(1.10)<a class="headerlink" href="#equation-tensionesmatricial" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
     \begin{pmatrix}
          \sigma_x\\
          \sigma_y\\
@@ -350,16 +346,16 @@ mediante la expresión:</p>
          \gamma
      \end{pmatrix}
  \end{equation}\end{split}\]</div>
-<div class="math" id="equation-tensor">
-<span class="eqno">(11)<a class="headerlink" href="#equation-tensor" title="Enlace permanente a esta ecuación">¶</a></span>\[ \begin{equation}
+<div class="math notranslate nohighlight" id="equation-tensor">
+<span class="eqno">(1.11)<a class="headerlink" href="#equation-tensor" title="Enlace permanente a esta ecuación">¶</a></span>\[ \begin{equation}
  [\vec{\sigma}]=[T][\vec{u}]
  \end{equation}\]</div>
 <dl class="glossary docutils">
 <dt id="term-tensor-de-tensiones">Tensor de tensiones</dt>
 <dd></dd>
 </dl>
-<div class="math" id="equation-tensordetensiones">
-<span class="eqno">(12)<a class="headerlink" href="#equation-tensordetensiones" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<div class="math notranslate nohighlight" id="equation-tensordetensiones">
+<span class="eqno">(1.12)<a class="headerlink" href="#equation-tensordetensiones" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      [T]=
      \begin{pmatrix} % O matrices como esta de 4 x 3
          \sigma_{nx} &amp; \tau_{yx} &amp;\tau_{zx}  \\
@@ -375,23 +371,23 @@ El tensor de tensiones será diagonal.</p>
 </dl>
 <p>tensiones principales</p>
 <p>y los valores propios son los valores de las <em>tensiones principales</em>, una máxima, otra mínima y otra intermedia.</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{equation}
     [\vec{\sigma}]=[T][\vec{u}]
 \end{equation}\]</div>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{equation}
     [\vec{\sigma}]=[\sigma][\vec{u}]
 \end{equation}\]</div>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{equation}
     [T][\vec{u}]=[\sigma][\vec{u}]
 \end{equation}\]</div>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{equation}
     [T-\sigma I][\vec{u}]=0
 \end{equation}\]</div>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{equation}
     \begin{bmatrix} %
         \sigma_{nx} -\sigma &amp; \tau_{yx} &amp;\tau_{zx}  \\
@@ -410,7 +406,7 @@ El tensor de tensiones será diagonal.</p>
         0
     \end{bmatrix}
 \end{equation}\end{split}\]</div>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{equation}
     \left.
     \begin{array}{l}
@@ -421,9 +417,9 @@ El tensor de tensiones será diagonal.</p>
 \right\}.
 \end{equation}\end{split}\]</div>
 <p>Las tensiones principales se obtienen de obtener las raíces del polinomio característico consecuencia de resolver
-<a class="reference internal" href="#equation-polinomiotensiones">(13)</a>:</p>
-<div class="math" id="equation-polinomiotensiones">
-<span class="eqno">(13)<a class="headerlink" href="#equation-polinomiotensiones" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<a class="reference internal" href="#equation-polinomiotensiones">(1.13)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-polinomiotensiones">
+<span class="eqno">(1.13)<a class="headerlink" href="#equation-polinomiotensiones" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \left|
      \begin{array}{ccc}
          \sigma_{nx} -\sigma &amp; \tau_{yx} &amp;\tau_{zx}  \\
@@ -438,18 +434,18 @@ El tensor de tensiones será diagonal.</p>
 <h2>1.6. Estado  de deformación<a class="headerlink" href="#estado-de-deformacion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Sea un sólido elástico no sometido a solicitación alguna y sin que se haya producido en él ninguna deformación.</p>
 <div class="figure align-center" id="deformacion" style="width: 80%">
-<a class="reference internal image-reference" href="../../_images/4.jpg"><img alt="Concepto de deformación" src="../../_images/4.jpg" style="width: 197.75px; height: 165.55px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4.jpg"><img alt="Concepto de deformación" src="../../_images/4.jpg" style="width: 197.75px; height: 165.54999999999998px;" /></a>
 </div>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{equation}
     P\vec{Q}=\vec{dr}=dx\vec{i}+dy\vec{j}+dz\vec{k}
 \end{equation}\]</div>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{equation}
     \vec{dr'}=\vec{dr}+[H]\vec{dr}+[D]\vec{dr}
 \end{equation}\]</div>
 <p>donde:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{equation}
     [H] =
     \begin{pmatrix}
@@ -459,7 +455,7 @@ El tensor de tensiones será diagonal.</p>
     \end{pmatrix}
 \end{equation}\end{split}\]</div>
 <p>y</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{equation}
     [D] =
     \begin{pmatrix}
@@ -468,25 +464,25 @@ El tensor de tensiones será diagonal.</p>
         \dfrac{1}{2} \left(\dfrac{ \partial{w}}{\partial{x}}+\dfrac{ \partial{u}}{\partial{z}}\right)&amp; \dfrac{1}{2} \left(\dfrac{ \partial{w}}{\partial{y}}+\dfrac{ \partial{v}}{\partial{z}}\right) &amp; \dfrac{ \partial{w}}{\partial{z}}
     \end{pmatrix}
 \end{equation}\end{split}\]</div>
-<p><span class="math">\(\vec{dr}\)</span>, pasa a <span class="math">\(\vec{dr'}\)</span> mediante los siguientes pasos (<a class="reference internal" href="#deformacion1"><span class="std std-numref">Figura 1.5</span></a>).:</p>
+<p><span class="math notranslate nohighlight">\(\vec{dr}\)</span>, pasa a <span class="math notranslate nohighlight">\(\vec{dr'}\)</span> mediante los siguientes pasos (<a class="reference internal" href="#deformacion1"><span class="std std-numref">Figura 1.5</span></a>).:</p>
 <div class="figure align-center" id="id4" style="width: 80%">
 <span id="deformacion1"></span><a class="reference internal image-reference" href="../../_images/5.jpg"><img alt="Concepto de deformación" src="../../_images/5.jpg" style="width: 348.95px; height: 159.95px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.5 </span><span class="caption-text">Transformación de <span class="math">\(\vec{dr}\)</span> a <span class="math">\(\vec{dr'}\)</span></span></p>
+<p class="caption"><span class="caption-number">Figura 1.5 </span><span class="caption-text">Transformación de <span class="math notranslate nohighlight">\(\vec{dr}\)</span> a <span class="math notranslate nohighlight">\(\vec{dr'}\)</span></span></p>
 </div>
 <ol class="arabic simple">
-<li>Una traslación definida por el vector desplazamiento <span class="math">\(\vec{\delta_p}\)</span> del punto P mediante la cual <span class="math">\(\vec{PQ}\)</span> pasa
-a <span class="math">\(\vec{P'Q_1}\)</span>.</li>
-<li>Un giro determinado por la matriz hemisimétrica [H] por el que <span class="math">\(\vec{P'Q_1}\)</span> pasa a <span class="math">\(\vec{P'Q_2}\)</span>.</li>
-<li>Una dilatación definida por la matriz simétrica [D] mediante la cual <span class="math">\(\vec{P'Q_2}\)</span> pasa
-finalmente a la posición <span class="math">\(\vec{P'Q'}\)</span>.</li>
+<li>Una traslación definida por el vector desplazamiento <span class="math notranslate nohighlight">\(\vec{\delta_p}\)</span> del punto P mediante la cual <span class="math notranslate nohighlight">\(\vec{PQ}\)</span> pasa
+a <span class="math notranslate nohighlight">\(\vec{P'Q_1}\)</span>.</li>
+<li>Un giro determinado por la matriz hemisimétrica [H] por el que <span class="math notranslate nohighlight">\(\vec{P'Q_1}\)</span> pasa a <span class="math notranslate nohighlight">\(\vec{P'Q_2}\)</span>.</li>
+<li>Una dilatación definida por la matriz simétrica [D] mediante la cual <span class="math notranslate nohighlight">\(\vec{P'Q_2}\)</span> pasa
+finalmente a la posición <span class="math notranslate nohighlight">\(\vec{P'Q'}\)</span>.</li>
 </ol>
-<p>Lo único que tiene influencia en la deformación es la transformación <span class="math">\([D]\vec{P'Q_2}\)</span> de ahí que
+<p>Lo único que tiene influencia en la deformación es la transformación <span class="math notranslate nohighlight">\([D]\vec{P'Q_2}\)</span> de ahí que
 la matriz [D] se denomine matriz de deformación.</p>
 <dl class="glossary docutils">
 <dt id="term-tensor-de-deformaciones">Tensor de deformaciones</dt>
 <dd></dd>
 </dl>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{equation}
     [D] =
     \begin{pmatrix}
@@ -496,14 +492,14 @@ la matriz [D] se denomine matriz de deformación.</p>
     \end{pmatrix}
 \end{equation}\end{split}\]</div>
 <ul class="simple">
-<li><span class="math">\(\epsilon_x\)</span>, <span class="math">\(\epsilon_y\)</span> y <span class="math">\(\epsilon_z\)</span>: deformaciones longitudinales unitarias en las
+<li><span class="math notranslate nohighlight">\(\epsilon_x\)</span>, <span class="math notranslate nohighlight">\(\epsilon_y\)</span> y <span class="math notranslate nohighlight">\(\epsilon_z\)</span>: deformaciones longitudinales unitarias en las
 direcciones de los ejes coordenados respectivos</li>
-<li><span class="math">\(\gamma_{xy}\)</span>, <span class="math">\(\gamma_{xz}\)</span> y <span class="math">\(\gamma_{yz}\)</span>: variaciones an- gulares experimentadas por
+<li><span class="math notranslate nohighlight">\(\gamma_{xy}\)</span>, <span class="math notranslate nohighlight">\(\gamma_{xz}\)</span> y <span class="math notranslate nohighlight">\(\gamma_{yz}\)</span>: variaciones an- gulares experimentadas por
 ángulos inicialmente rectos de lados paralelos a los ejes coordenados x, y; x, z, e y, z, respectivamente.</li>
 </ul>
 <p>Al igual que con el tensor de tensiones, existen unas direcciones principales o autovectores de la matriz [D]
 que se obtienen resolviendo el sistema de ecuaciones:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{equation}
     \left.
     \begin{array}{c}
@@ -514,7 +510,7 @@ que se obtienen resolviendo el sistema de ecuaciones:</p>
     \right\}
 \end{equation}\end{split}\]</div>
 <p>Las raíces de la ecuación característica:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{equation}
     \left|
     \begin{array}{ccc}
@@ -535,15 +531,51 @@ que se obtienen resolviendo el sistema de ecuaciones:</p>
 <dd></dd>
 </dl>
 <p>En un punto P interior al sólido elástico, se define el vector deformación unitaria en la dirección determinada
-por <span class="math">\(\Delta\vec{r}\)</span> como:</p>
-<div class="math">
+por <span class="math notranslate nohighlight">\(\Delta\vec{r}\)</span> como:</p>
+<div class="math notranslate nohighlight">
 \[\begin{equation}
     \vec{\varepsilon}=
     \lim_{\vert\Delta\vec{r}\vert \to 0}\dfrac{\Delta\vec{r}}{\vert\Delta\vec{r}\vert}=
     [D]\lim_{\vert\Delta\vec{r}\vert \to 0}\dfrac{\Delta\vec{r}}{\vert\Delta\vec{r}\vert}=
     [D]\dfrac{\vec{dr}}{\vert \vec{dr}\vert}=[D][\vec{u}]
 \end{equation}\]</div>
-<p>siendo <span class="math">\(vec{u}\)</span> el vector unitario en la dirección de <span class="math">\(vec{dr}\)</span>.</p>
+<p>siendo <span class="math notranslate nohighlight">\(\vec{u}\)</span> el vector unitario en la dirección de :m^ath:<cite>vec{dr}</cite>.</p>
+</div>
+<div class="section" id="principios-de-la-rm">
+<h2>1.7. Principios de la RM<a class="headerlink" href="#principios-de-la-rm" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="principio-de-rigidez-relativa-de-los-sistemas-elasticos">
+<h3>1.7.1. Principio de rigidez relativa de los sistemas elásticos<a class="headerlink" href="#principio-de-rigidez-relativa-de-los-sistemas-elasticos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Al aplicar el sistema exterior de fuerzas la forma del sólido no varía de forma significativa.
+Por ello, se expresan las condiciones de equilibrio como si el sólido deformado tuviera la misma forma y
+dimensiones que antes de producirse la deformación (<a class="reference internal" href="#prigidez"><span class="std std-numref">Figura 1.6</span></a>).</p>
+<div class="figure align-center" id="id5" style="width: 80%">
+<span id="prigidez"></span><a class="reference internal image-reference" href="../../_images/6.jpg"><img alt="Concepto de deformación" src="../../_images/6.jpg" style="width: 553.3499999999999px; height: 163.45px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.6 </span><span class="caption-text">Principio de rigidez relativa</span></p>
+</div>
+</div>
+<div class="section" id="principio-de-superposicion-de-efectos">
+<h3>1.7.2. Principio de superposición de efectos<a class="headerlink" href="#principio-de-superposicion-de-efectos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Los desplazamientos y las tensiones en un punto de un sólido elástico sometido a varias fuerzas exteriores
+directamente aplicadas son, respectivamente, la suma de los desplazamientos y las tensiones que se producen en dicho
+punto por cada fuerza actuando aisladamente.</p>
+<p>Excepciones:</p>
+<p>Los casos en los que no sea aplicable el principio de rigidez ni en los casos en los que los efectos de las
+fuerzas no sean independientes de las deformaciones como ocurre en la viga recta AB indicada en la (<a class="reference internal" href="#nosuperposicion"><span class="std std-numref">Figura 1.7</span></a>)</p>
+<div class="figure align-center" id="id6" style="width: 80%">
+<span id="nosuperposicion"></span><a class="reference internal image-reference" href="../../_images/7.jpg"><img alt="Concepto de deformación" src="../../_images/7.jpg" style="width: 570.15px; height: 74.55px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.7 </span><span class="caption-text">Aquí no se cumple el principio de superposición</span></p>
+</div>
+</div>
+<div class="section" id="principio-de-saint-venant">
+<h3>1.7.3. Principio de Saint-Venant<a class="headerlink" href="#principio-de-saint-venant" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>A partir de una distancia suficiente de los puntos de la superficie de un sólido elástico en los que está aplicado
+un determinado sistema de fuerzas, las tensiones y deformaciones son prácticamente iguales para todos los
+sistemas de fuerzas que sean estáticamente equivalentes al dado.</p>
+<div class="figure align-center" id="id7" style="width: 80%">
+<span id="venant"></span><a class="reference internal image-reference" href="../../_images/8.jpg"><img alt="Concepto de deformación" src="../../_images/8.jpg" style="width: 330.04999999999995px; height: 198.79999999999998px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.8 </span><span class="caption-text">Principio de Saint-Venant</span></p>
+</div>
+</div>
 </div>
 </div>
 
@@ -567,7 +599,7 @@ por <span class="math">\(\Delta\vec{r}\)</span> como:</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Derechos de autor 2018, JCR.
-      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.6.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.
     </div>
   </body>
 </html>

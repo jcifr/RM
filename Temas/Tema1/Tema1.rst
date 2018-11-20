@@ -584,5 +584,67 @@ por :math:`\Delta\vec{r}` como:
         [D]\dfrac{\vec{dr}}{\vert \vec{dr}\vert}=[D][\vec{u}]
     \end{equation}
 
-siendo :math:`vec{u}` el vector unitario en la dirección de :math:`vec{dr}`.
+
+siendo :math:`\vec{u}` el vector unitario en la dirección de :m^ath:`\vec{dr}`.
+
+Principios de la RM
+___________________
+
+Principio de rigidez relativa de los sistemas elásticos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Al aplicar el sistema exterior de fuerzas la forma del sólido no varía de forma significativa.
+Por ello, se expresan las condiciones de equilibrio como si el sólido deformado tuviera la misma forma y
+dimensiones que antes de producirse la deformación (:numref:`prigidez`).
+
+.. _prigidez:
+.. figure:: Figuras/6.jpg
+   :figwidth: 80%
+   :scale: 35 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Principio de rigidez relativa
+
+Principio de superposición de efectos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Los desplazamientos y las tensiones en un punto de un sólido elástico sometido a varias fuerzas exteriores
+directamente aplicadas son, respectivamente, la suma de los desplazamientos y las tensiones que se producen en dicho
+punto por cada fuerza actuando aisladamente.
+
+Excepciones:
+
+Los casos en los que no sea aplicable el principio de rigidez ni en los casos en los que los efectos de las
+fuerzas no sean independientes de las deformaciones como ocurre en la viga recta AB indicada en la (:numref:`nosuperposicion`)
+
+.. _nosuperposicion:
+.. figure:: Figuras/7.jpg
+   :figwidth: 80%
+   :scale: 35 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Aquí no se cumple el principio de superposición
+
+
+Principio de Saint-Venant
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A partir de una distancia suficiente de los puntos de la superficie de un sólido elástico en los que está aplicado
+un determinado sistema de fuerzas, las tensiones y deformaciones son prácticamente iguales para todos los
+sistemas de fuerzas que sean estáticamente equivalentes al dado.
+
+.. _Venant:
+.. figure:: Figuras/8.jpg
+   :figwidth: 80%
+   :scale: 35 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Principio de Saint-Venant
+
+
+
+
 
