@@ -644,8 +644,8 @@ sistemas de fuerzas que sean estáticamente equivalentes al dado.
 
    Principio de Saint-Venant
 
-Relaciones entre tensiones y de deformaciones
-_____________________________________________
+Relación entre tensión y de deformación. Ensayo de tracción
+___________________________________________________________
 
 Dado que deformación y tensión son causa y efecto las matrices de tensiones y de
 deformación estén relacionadas entre sí.
@@ -723,22 +723,15 @@ entre las componentes de la matriz de tensiones [T] y de deformaciones [D] son:
 
    Leyes de Hooke generalizadas
 
-
 .. math::
     \begin{equation}
         \left\{
-        \begin{array}{l}
-            \varepsilon_x=\dfrac{1}{E}[\sigma_{nx}-\mu(\sigma_{ny}+\sigma_{nz})]\\
+        \begin{array}{lll}
+            \varepsilon_x=\dfrac{1}{E}[\sigma_{nx}-\mu(\sigma_{ny}+\sigma_{nz})]& ; & \gamma_{xy}=\dfrac{\tau_{xy}}{G}\\
             \\
-            \varepsilon_y=\dfrac{1}{E}[\sigma_{ny}-\mu(\sigma_{nx}+\sigma_{nz})]\\
+            \varepsilon_y=\dfrac{1}{E}[\sigma_{ny}-\mu(\sigma_{nx}+\sigma_{nz})]& ; & \gamma_{yz}=\dfrac{\tau_{yz}}{G}\\
             \\
-            \varepsilon_z=\dfrac{1}{E}[\sigma_{nz}-\mu(\sigma_{nx}+\sigma_{ny})]\\
-            \\
-            \gamma_{xy}=\dfrac{\tau_{xy}}{G}\\
-            \\
-            \gamma_{yz}=\dfrac{\tau_{yz}}{G}\\
-            \\
-            \gamma_{zx}=\dfrac{\tau_{zx}}{G}
+            \varepsilon_z=\dfrac{1}{E}[\sigma_{nz}-\mu(\sigma_{nx}+\sigma_{ny})]& ; & \gamma_{zx}=\dfrac{\tau_{zx}}{G}\\
         \end{array}
         \right.
     \end{equation}
@@ -756,3 +749,159 @@ en donde:
     \end{equation}
 
 Tiene las mismas dimensiones  que E (:math:`[F ][L]^{−2}`) y es diferente para cada material.
+
+Esfuerzos normal y cortante y momentos de flexión y de torsión
+______________________________________________________________
+
+.. _solidosolicitaciones:
+.. figure:: Figuras/10.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Sólido rígido sometido a diversas solicitaciones
+
+
+.. _resultante:
+.. figure:: Figuras/11.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Resultante debida a la parte eliminada
+
+.. math::
+
+    \begin{equation}
+        \vec{R}=N\vec{i}+T_y\vec{j}+T_z\vec{k}
+    \end{equation}
+
+.. glossary::
+
+   Esfuerzo normal
+
+N, llamado esfuerzo normal, por serlo a la superficie de la sección considerada, tiende a
+empujar o separar a ambas partes del prisma dando lugar a esfuerzos de compresión o tracción, respectivamente.
+
+.. glossary::
+
+   Esfuerzo cortante
+
+.. math::
+
+    \begin{equation}
+        \vec{T}=T_y\vec{j}+T_z\vec{k}
+    \end{equation}
+
+T, esfuerzo que actúa tangencialmente a la superficie de la sección.
+
+.. _resultantemomentos:
+.. figure:: Figuras/12.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Momentos debidos a la parte eliminada
+
+.. math::
+
+    \begin{equation}
+        \vec{M}=M_T\vec{i}+M_y\vec{j}+M_z\vec{k}
+    \end{equation}
+
+.. glossary::
+
+   Momento torsor
+
+:math:`M_T`: tiende a hacer girar el sólido sobre sí mismo, creando un efecto de torsión.
+
+.. glossary::
+
+   Momento flector
+
+.. math::
+
+    \begin{equation}
+        \vec{M_F}=M_y\vec{j}+M_z\vec{k}
+    \end{equation}
+
+:math:`M_F`: :math:`M_y` y :math:`M_z` tienden a obligar al sólido a girar lateralmente curvándolo en los planos xz y xy.
+Momentos flectores.
+
+.. _relacion:
+.. figure:: Figuras/13.jpg
+   :figwidth: 80%
+   :scale: 40 %
+   :alt: Concepto de deformación
+   :align: center
+
+   Relación entre R, M y la matriz de tensiones
+
+.. math::
+    \begin{equation}
+        \begin{array}{lllll}
+            N=\int \int_{\Omega }^{ }  \sigma _{nx}d\Omega & ;&T_y=\int \int_{\Omega }^{ }  \tau _{xy}d\Omega  & ;& T_z=\int \int_{\Omega }^{ }  \tau _{xz}d\Omega \\
+        \end{array}
+    \end{equation}
+
+Tomando momentos respecto a G se obtienen las expresiones de los momentos torsor :math:`M_T`
+y flectores :math:`M_y` y :math:`M_z`:
+
+.. math::
+
+    \begin{equation}
+        \vec{M}= \int \int_{\Omega } (\vec{r}x\sigma)=\int \int_{\Omega }
+        \left|
+        \begin{array}{ccc}
+            \vec{i} & \vec{j} &\vec{k}  \\
+            0  & y & z \\
+            \sigma_{nx} & \tau_{xy} & \tau_{zx}
+        \end{array}
+        \right|d\Omega=
+        \vec{i}\int \int_{\Omega } (y\tau_{zx}-z\tau_{xy})d\Omega+
+        \vec{j}\int \int_{\Omega } z\sigma_{nx}d\Omega-
+        \vec{k}\int \int_{\Omega } y\sigma_{nx}d\Omega
+    \end{equation}
+
+de donde se tiene que:
+
+.. math::
+
+    \begin{equation}
+        \left.
+        \begin{array}{l}
+            M_T= \int \int_{\Omega } (y\tau_{zx}-z\tau_{xy})d\Omega     \\
+            M_y= \int \int_{\Omega } \sigma_{nx}zd\Omega                \\
+            M_z= \int \int_{\Omega } \sigma_{nx}yd\Omega
+        \end{array}
+        \right\}
+    \end{equation}
+
+Tipos de solicitaciones exteriores
+__________________________________
+
+* Cargas:  fuerzas activas o directamente aplicadas
+* Reacciones: fuerzas debidas a las ligaduras
+
+En general estarán formadas en general por una fuerza y un momento.
+
+Dentro de las cargas:
+
+* Fuerzas de volumen: :math:`f_v`: en general será función de la posición del punto,
+  sobre cada elemento de volumen dv del prisma estará aplicada la fuerza :math:`f_vdv`
+* Fuerzas de superficie: se aplican a la superficie exterior del prisma.
+    * Concentradas:
+    * Repartidas:
+
+En función de la continuidad de actuación sobre la estructura
+
+* Cargas permanentes
+* Cargas accidentales o sobrecargas
+
+Si existen o no fuerzas de inercia:
+
+* Cargas estáticas
+* Cargas dinámicas
