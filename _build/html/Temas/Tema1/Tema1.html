@@ -275,47 +275,31 @@ se podrán descomponer a su vez en las direcciones de los dos ejes paralelos a l
 <span id="estadodeenprisma"></span><a class="reference internal image-reference" href="../../_images/3-1.jpg"><img alt="Concepto de deformación" src="../../_images/3-1.jpg" style="width: 467.95px; height: 265.3px;" /></a>
 <p class="caption"><span class="caption-number">Figura 1.3 </span><span class="caption-text">Tensiones sobre las caras del paralelépıpedo elemental:</span></p>
 </div>
-<p>Las tensiones en las caras normales a los ejes x, y z son:</p>
-<div class="math" id="equation-tensionesnormalejex">
-<span class="eqno">(3)<a class="headerlink" href="#equation-tensionesnormalejex" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
-     \begin{split}
-         \sigma_{nx}^{*} &amp; = \sigma_{nx}+\dfrac{\partial\sigma_{nx}}{\partial x}dx \\
-         \tau_{xy}^{*} &amp; = \tau_{xy}+\dfrac{\partial\tau_{xy}}{\partial x}dx \\
-         \tau_{xz}^{*} &amp; = \tau_{xz}+\dfrac{\partial\tau_{xz}}{\partial x}dx \\
-     \end{split}
- \end{equation}\end{split}\]</div>
-<div class="math" id="equation-tensionesnormalejey">
-<span class="eqno">(4)<a class="headerlink" href="#equation-tensionesnormalejey" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
-     \begin{split}
-         \sigma_{ny}^{*} &amp; = \sigma_{ny}+\dfrac{\partial\sigma_{ny}}{\partial y}dy \\
-         \tau_{yx}^{*} &amp; = \tau_{yx}+\dfrac{\partial\tau_{yx}}{\partial y}dy \\
-         \tau_{yz}^{*} &amp; = \tau_{yz}+\dfrac{\partial\tau_{yz}}{\partial y}dy \\
-     \end{split}
- \end{equation}\end{split}\]</div>
-<div class="math" id="equation-tensionesnormalejez">
-<span class="eqno">(5)<a class="headerlink" href="#equation-tensionesnormalejez" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
-     \begin{split}
-         \sigma_{nz}^{*} &amp; = \sigma_{nz}+\dfrac{\partial\sigma_{nz}}{\partial z}dz \\
-         \tau_{zx}^{*} &amp; = \tau_{zx}+\dfrac{\partial\tau_{zx}}{\partial z}dz \\
-         \tau_{zy}^{*} &amp; = \tau_{zy}+\dfrac{\partial\tau_{zy}}{\partial z}dz \\
-     \end{split}
+<p>Las tensiones en las caras normales a los ejes &#8220;x&#8221;, &#8220;y&#8221; y &#8220;z&#8221; son:</p>
+<div class="math" id="equation-tensionesnormalejes">
+<span class="eqno">(3)<a class="headerlink" href="#equation-tensionesnormalejes" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+     \begin{array}
+         \sigma_{nx}^{*} = \sigma_{nx}+\dfrac{\partial\sigma_{nx}}{\partial x}dx &amp;;&amp; \sigma_{ny}^{*} = \sigma_{ny}+\dfrac{\partial\sigma_{ny}}{\partial y}dy&amp;;&amp;\sigma_{nz}^{*}  = \sigma_{nz}+\dfrac{\partial\sigma_{nz}}{\partial z}dz\\
+         \tau_{xy}^{*} = \tau_{xy}+\dfrac{\partial\tau_{xy}}{\partial x}dx &amp; ;&amp; \tau_{yx}^{*}  = \tau_{yx}+\dfrac{\partial\tau_{yx}}{\partial y}dy &amp;;&amp;\tau_{zx}^{*}  = \tau_{zx}+\dfrac{\partial\tau_{zx}}{\partial z}dz \\
+         \tau_{xz}^{*} = \tau_{xz}+\dfrac{\partial\tau_{xz}}{\partial x}dx &amp;;&amp; \tau_{yz}^{*} = \tau_{yz}+\dfrac{\partial\tau_{yz}}{\partial y}dy&amp;;&amp;\tau_{zy}^{*}  = \tau_{zy}+\dfrac{\partial\tau_{zy}}{\partial z}dz\\
+     \end{array}
  \end{equation}\end{split}\]</div>
 <p>También sobre el paralelepípedo actúan fuerzas de masa por unidad de volumen <span class="math">\(f_v\)</span>,
 y componentes cartesianas <span class="math">\(f_x\)</span>, <span class="math">\(f_y\)</span>, <span class="math">\(f_z\)</span>.</p>
 <p>Planteando las condiciones de equilibrio estático del paralelepípedo aislado,
 del equilibrio de fuerzas se obtienen las ecuaciones de equilibrio interno:</p>
 <div class="math" id="equation-equilibriointerno">
-<span class="eqno">(6)<a class="headerlink" href="#equation-equilibriointerno" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<span class="eqno">(4)<a class="headerlink" href="#equation-equilibriointerno" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \begin{split}
          (\sigma_{nx}^{*}-\sigma_{nx})dydz+(\tau_{yx}^{*}-\tau_{yx} )dzdx+(\tau_{zx}^{*}-\tau_{zx})dxdy+f_x dxdydz=0 \\
          (\tau_{nx}^{*}-\tau_{nx} )dydz+(\sigma_{ny}^{*}-\sigma_{ny})dzdx+(\tau_{zy}^{*}-\tau_{zy})dxdy+f_y dxdydz=0 \\
          (\tau_{xz}^{*}-\tau_{xz} )dydz+(\tau_{yz}^{*}-\tau_{yz})dzdx+(\sigma_{nz}^{*}-\sigma_{nz})dxdy+f_z dxdydz=0 \\
      \end{split}
  \end{equation}\end{split}\]</div>
-<p>Sustituyendo <a class="reference internal" href="#equation-tensionesnormalejex">(3)</a>, <a class="reference internal" href="#equation-tensionesnormalejey">(4)</a> y <a class="reference internal" href="#equation-tensionesnormalejez">(5)</a> en <a class="reference internal" href="#equation-equilibriointerno">(6)</a>
+<p>Sustituyendo <a class="reference internal" href="#equation-tensionesnormalejes">(3)</a> en <a class="reference internal" href="#equation-equilibriointerno">(4)</a>
 se llega a:</p>
 <div class="math" id="equation-equilibriointerno1">
-<span class="eqno">(7)<a class="headerlink" href="#equation-equilibriointerno1" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<span class="eqno">(5)<a class="headerlink" href="#equation-equilibriointerno1" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \begin{split}
          f_x+\dfrac{\partial\sigma_{nx}}{\partial x}+\dfrac{\partial\tau_{xy}}{\partial x} +\dfrac{\partial\tau_{xz}}{\partial z} &amp; = 0 \\
          f_y+\dfrac{\partial\tau_{yx}}{\partial x} +\dfrac{\partial\sigma_{ny}}{\partial y}+\dfrac{\partial\tau_{yz}}{\partial z} &amp; = 0 \\
@@ -324,7 +308,7 @@ se llega a:</p>
  \end{equation}\end{split}\]</div>
 <p>Tomando momentos respecto a los ejes &#8220;x&#8221;, &#8220;y&#8221; y &#8220;z&#8221; y planteando el equilibrio se tiene que:</p>
 <div class="math" id="equation-equilibriodemomentos">
-<span class="eqno">(8)<a class="headerlink" href="#equation-equilibriodemomentos" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<span class="eqno">(6)<a class="headerlink" href="#equation-equilibriodemomentos" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \begin{split}
          (\tau_{yz}dxdz)dy- (\tau_{zy}dxdy)dz&amp; = 0 \\
          (\tau_{zx}dxdy)dy- (\tau_{zx}dxdy)dz&amp; = 0 \\
@@ -333,14 +317,14 @@ se llega a:</p>
  \end{equation}\end{split}\]</div>
 <p>de donde:</p>
 <div class="math" id="equation-tensionestang">
-<span class="eqno">(9)<a class="headerlink" href="#equation-tensionestang" title="Enlace permanente a esta ecuación">¶</a></span>\[ \begin{equation}
+<span class="eqno">(7)<a class="headerlink" href="#equation-tensionestang" title="Enlace permanente a esta ecuación">¶</a></span>\[ \begin{equation}
      \left.
      \begin{array}{lllll}
          \tau_{yz}=\tau_{zy}&amp; ;&amp; \tau_{zx}=\tau_{xz}&amp; ;&amp; \tau_{xy}=\tau_{yx}
      \end{array}
      \right.
  \end{equation}\]</div>
-<p>La expresión <a class="reference internal" href="#equation-tensionestang">(9)</a> es conocida como el <em>teorema de reciprocidad de las tensiones tangenciales</em>:
+<p>La expresión <a class="reference internal" href="#equation-tensionestang">(7)</a> es conocida como el <em>teorema de reciprocidad de las tensiones tangenciales</em>:
 las componentes de las tensiones cortantes en un punto correspondientes a dos planos perpendiculares,
 en dirección normal a la arista de su diedro, son iguales.</p>
 <p>De los 9 valores que definen el estado tensional de un punto, 6 son independientes.</p>
@@ -350,7 +334,7 @@ correspondiente a una orientación genérica
 definida por el vector unitario normal <span class="math">\(\vec{u}\)</span>, (<span class="math">\(\alpha\)</span>, <span class="math">\(\beta\)</span>, <span class="math">\(\gamma\)</span>)
 mediante la expresión:</p>
 <div class="math" id="equation-tensionesmatricial">
-<span class="eqno">(10)<a class="headerlink" href="#equation-tensionesmatricial" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<span class="eqno">(8)<a class="headerlink" href="#equation-tensionesmatricial" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
     \begin{pmatrix}
          \sigma_x\\
          \sigma_y\\
@@ -369,7 +353,7 @@ mediante la expresión:</p>
      \end{pmatrix}
  \end{equation}\end{split}\]</div>
 <div class="math" id="equation-tensor">
-<span class="eqno">(11)<a class="headerlink" href="#equation-tensor" title="Enlace permanente a esta ecuación">¶</a></span>\[ \begin{equation}
+<span class="eqno">(9)<a class="headerlink" href="#equation-tensor" title="Enlace permanente a esta ecuación">¶</a></span>\[ \begin{equation}
  [\vec{\sigma}]=[T][\vec{u}]
  \end{equation}\]</div>
 <dl class="glossary docutils">
@@ -377,7 +361,7 @@ mediante la expresión:</p>
 <dd></dd>
 </dl>
 <div class="math" id="equation-tensordetensiones">
-<span class="eqno">(12)<a class="headerlink" href="#equation-tensordetensiones" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<span class="eqno">(10)<a class="headerlink" href="#equation-tensordetensiones" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      [T]=
      \begin{pmatrix} % O matrices como esta de 4 x 3
          \sigma_{nx} &amp; \tau_{yx} &amp;\tau_{zx}  \\
@@ -439,9 +423,9 @@ El tensor de tensiones será diagonal.</p>
 \right\}.
 \end{equation}\end{split}\]</div>
 <p>Las tensiones principales se obtienen de obtener las raíces del polinomio característico consecuencia de resolver
-<a class="reference internal" href="#equation-polinomiotensiones">(13)</a>:</p>
+<a class="reference internal" href="#equation-polinomiotensiones">(11)</a>:</p>
 <div class="math" id="equation-polinomiotensiones">
-<span class="eqno">(13)<a class="headerlink" href="#equation-polinomiotensiones" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
+<span class="eqno">(11)<a class="headerlink" href="#equation-polinomiotensiones" title="Enlace permanente a esta ecuación">¶</a></span>\[\begin{split} \begin{equation}
      \left|
      \begin{array}{ccc}
          \sigma_{nx} -\sigma &amp; \tau_{yx} &amp;\tau_{zx}  \\
@@ -601,13 +585,29 @@ sistemas de fuerzas que sean estáticamente equivalentes al dado.</p>
 </div>
 <div class="section" id="relacion-entre-tension-y-de-deformacion-ensayo-de-traccion">
 <h2>1.8. Relación entre tensión y de deformación. Ensayo de tracción<a class="headerlink" href="#relacion-entre-tension-y-de-deformacion-ensayo-de-traccion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Dado que deformación y tensión son causa y efecto las matrices de tensiones y de
-deformación estén relacionadas entre sí.</p>
 <div class="figure align-center" id="id9" style="width: 80%">
-<span id="ensayoacero"></span><a class="reference internal image-reference" href="../../_images/9.jpg"><img alt="Concepto de deformación" src="../../_images/9.jpg" style="width: 338.8px; height: 322.8px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.9 </span><span class="caption-text">Ensayo de tracción en un probeta de acero</span></p>
+<span id="maquinatraccion"></span><a class="reference internal image-reference" href="../../_images/9-1.jpg"><img alt="../../_images/9-1.jpg" src="../../_images/9-1.jpg" style="width: 276.9px; height: 334.2px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.9 </span><span class="caption-text">Máquina empleada para realizar pruebas a tensión en probeta.</span></p>
+</div>
+<div class="figure align-center" id="id10" style="width: 80%">
+<span id="probeta"></span><a class="reference internal image-reference" href="../../_images/9-2.jpg"><img alt="../../_images/9-2.jpg" src="../../_images/9-2.jpg" style="width: 62.4px; height: 247.2px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.10 </span><span class="caption-text">Probeta típica para ensayo o prueba de tensión.</span></p>
+</div>
+<div class="figure align-center" id="id11" style="width: 80%">
+<span id="probetaductil"></span><a class="reference internal image-reference" href="../../_images/9-3.jpg"><img alt="../../_images/9-3.jpg" src="../../_images/9-3.jpg" style="width: 157.2px; height: 245.7px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.11 </span><span class="caption-text">Probeta después del ensayo de un material dúctil.</span></p>
+</div>
+<div class="figure align-center" id="id12" style="width: 80%">
+<span id="probetafragil"></span><a class="reference internal image-reference" href="../../_images/9-3.jpg"><img alt="../../_images/9-3.jpg" src="../../_images/9-3.jpg" style="width: 157.2px; height: 245.7px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.12 </span><span class="caption-text">Probeta después del ensayo de un material frágil.</span></p>
+</div>
+<div class="figure align-center" id="id13" style="width: 80%">
+<span id="ensayoacero"></span><a class="reference internal image-reference" href="../../_images/9.jpg"><img alt="../../_images/9.jpg" src="../../_images/9.jpg" style="width: 338.8px; height: 322.8px;" /></a>
+<p class="caption"><span class="caption-number">Figura 1.13 </span><span class="caption-text">Ensayo de tracción en un probeta de acero</span></p>
 </div>
 <p>Se observa una zona de elasticidad proporcional en la que la relación tensión-deformación es lineal.</p>
+<p>Dado que deformación y tensión son causa y efecto, las matrices de tensiones y de
+deformación estén relacionadas entre sí.</p>
 <dl class="glossary docutils">
 <dt id="term-ley-de-hooke">Ley de Hooke</dt>
 <dd></dd>
@@ -685,13 +685,13 @@ entre las componentes de la matriz de tensiones [T] y de deformaciones [D] son:<
 </div>
 <div class="section" id="esfuerzos-normal-y-cortante-y-momentos-de-flexion-y-de-torsion">
 <h2>1.9. Esfuerzos normal y cortante y momentos de flexión y de torsión<a class="headerlink" href="#esfuerzos-normal-y-cortante-y-momentos-de-flexion-y-de-torsion" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="figure align-center" id="id10" style="width: 80%">
+<div class="figure align-center" id="id14" style="width: 80%">
 <span id="solidosolicitaciones"></span><a class="reference internal image-reference" href="../../_images/10.jpg"><img alt="Concepto de deformación" src="../../_images/10.jpg" style="width: 300.0px; height: 214.4px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.10 </span><span class="caption-text">Sólido rígido sometido a diversas solicitaciones</span></p>
+<p class="caption"><span class="caption-number">Figura 1.14 </span><span class="caption-text">Sólido rígido sometido a diversas solicitaciones</span></p>
 </div>
-<div class="figure align-center" id="id11" style="width: 80%">
+<div class="figure align-center" id="id15" style="width: 80%">
 <span id="resultante"></span><a class="reference internal image-reference" href="../../_images/11.jpg"><img alt="Concepto de deformación" src="../../_images/11.jpg" style="width: 300.0px; height: 249.2px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.11 </span><span class="caption-text">Resultante debida a la parte eliminada</span></p>
+<p class="caption"><span class="caption-number">Figura 1.15 </span><span class="caption-text">Resultante debida a la parte eliminada</span></p>
 </div>
 <div class="math">
 \[\begin{equation}
@@ -712,9 +712,9 @@ empujar o separar a ambas partes del prisma dando lugar a esfuerzos de compresi�
     \vec{T}=T_y\vec{j}+T_z\vec{k}
 \end{equation}\]</div>
 <p>T, esfuerzo que actúa tangencialmente a la superficie de la sección.</p>
-<div class="figure align-center" id="id12" style="width: 80%">
+<div class="figure align-center" id="id16" style="width: 80%">
 <span id="resultantemomentos"></span><a class="reference internal image-reference" href="../../_images/12.jpg"><img alt="Concepto de deformación" src="../../_images/12.jpg" style="width: 280.4px; height: 240.8px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.12 </span><span class="caption-text">Momentos debidos a la parte eliminada</span></p>
+<p class="caption"><span class="caption-number">Figura 1.16 </span><span class="caption-text">Momentos debidos a la parte eliminada</span></p>
 </div>
 <div class="math">
 \[\begin{equation}
@@ -735,9 +735,9 @@ empujar o separar a ambas partes del prisma dando lugar a esfuerzos de compresi�
 \end{equation}\]</div>
 <p><span class="math">\(M_F\)</span>: <span class="math">\(M_y\)</span> y <span class="math">\(M_z\)</span> tienden a obligar al sólido a girar lateralmente curvándolo en los planos xz y xy.
 Momentos flectores.</p>
-<div class="figure align-center" id="id13" style="width: 80%">
+<div class="figure align-center" id="id17" style="width: 80%">
 <span id="relacion"></span><a class="reference internal image-reference" href="../../_images/13.jpg"><img alt="Concepto de deformación" src="../../_images/13.jpg" style="width: 317.6px; height: 232.4px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.13 </span><span class="caption-text">Relación entre R, M y la matriz de tensiones</span></p>
+<p class="caption"><span class="caption-number">Figura 1.17 </span><span class="caption-text">Relación entre R, M y la matriz de tensiones</span></p>
 </div>
 <div class="math">
 \[\begin{split}\begin{equation}
@@ -809,22 +809,22 @@ sobre cada elemento de volumen dv del prisma estará aplicada la fuerza <span cl
 <h2>1.11. Tipos de apoyos<a class="headerlink" href="#tipos-de-apoyos" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>En cada ligadura existe una reacción que, en general, estará formada por una fuerza y por un momento.
 Una sección no sometida a ligadura alguna tiene 6 g.d.l. (3 desplazamientos y 3 giros).</p>
-<div class="figure align-center" id="id14" style="width: 80%">
+<div class="figure align-center" id="id18" style="width: 80%">
 <span id="impedidos"></span><a class="reference internal image-reference" href="../../_images/14.jpg"><img alt="Concepto de deformación" src="../../_images/14.jpg" style="width: 337.2px; height: 254.0px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.14 </span><span class="caption-text">6 g.d.l. impedidos</span></p>
+<p class="caption"><span class="caption-number">Figura 1.18 </span><span class="caption-text">6 g.d.l. impedidos</span></p>
 </div>
-<div class="figure align-center" id="id15" style="width: 80%">
+<div class="figure align-center" id="id19" style="width: 80%">
 <span id="id1"></span><a class="reference internal image-reference" href="../../_images/15.jpg"><img alt="Concepto de deformación" src="../../_images/15.jpg" style="width: 259.6px; height: 228.4px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.15 </span><span class="caption-text">3 g.d.l. impedidos (los desplazamientos)</span></p>
+<p class="caption"><span class="caption-number">Figura 1.19 </span><span class="caption-text">3 g.d.l. impedidos (los desplazamientos)</span></p>
 </div>
 <div class="section" id="apoyo-articulado-movil">
 <h3>1.11.1. Apoyo articulado móvil<a class="headerlink" href="#apoyo-articulado-movil" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Es libre el movimiento de la sección en la dirección del eje x y el giro en el plano xy.
 La reacción se reduce a una fuerza perpendicular al posible desplazamiento del apoyo.
 Equivale, por tanto, a una incógnita: el módulo de la reacción.</p>
-<div class="figure align-center" id="id16" style="width: 80%">
+<div class="figure align-center" id="id20" style="width: 80%">
 <span id="apoyoarticuladomovil"></span><a class="reference internal image-reference" href="../../_images/16.jpg"><img alt="Concepto de deformación" src="../../_images/16.jpg" style="width: 472.8px; height: 194.4px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.16 </span><span class="caption-text">Apoyo articulado móvil</span></p>
+<p class="caption"><span class="caption-number">Figura 1.20 </span><span class="caption-text">Apoyo articulado móvil</span></p>
 </div>
 </div>
 <div class="section" id="apoyo-articulado-fijo">
@@ -833,9 +833,9 @@ Equivale, por tanto, a una incógnita: el módulo de la reacción.</p>
 pero el giro en el plano xy no lo está.
 La reacción es en este caso una fuerza de componentes <span class="math">\(RA_x\)</span> y <span class="math">\(RA_y\)</span>.
 Equivale a dos incógnitas.</p>
-<div class="figure align-center" id="id17" style="width: 80%">
+<div class="figure align-center" id="id21" style="width: 80%">
 <span id="apoyoarticuladofijo"></span><a class="reference internal image-reference" href="../../_images/17.jpg"><img alt="Concepto de deformación" src="../../_images/17.jpg" style="width: 486.0px; height: 185.6px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.17 </span><span class="caption-text">Apoyo articulado fijo</span></p>
+<p class="caption"><span class="caption-number">Figura 1.21 </span><span class="caption-text">Apoyo articulado fijo</span></p>
 </div>
 </div>
 <div class="section" id="apoyo-empotrado">
@@ -845,9 +845,9 @@ La sección A del apoyo queda inmovilizada.</p>
 <p>La reacción se compone de una fuerza <span class="math">\(\vec{R_A}\)</span>, de componentes <span class="math">\(RA_x\)</span> y <span class="math">\(RA_y\)</span>,
 y de un momento <span class="math">\(\vec{M_A}\)</span> perpendicular al plano xy.
 Equivale a 3 incógnitas.</p>
-<div class="figure align-center" id="id18" style="width: 80%">
+<div class="figure align-center" id="id22" style="width: 80%">
 <span id="empotramiento"></span><a class="reference internal image-reference" href="../../_images/18.jpg"><img alt="Concepto de deformación" src="../../_images/18.jpg" style="width: 464.4px; height: 168.0px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.18 </span><span class="caption-text">Empotramiento</span></p>
+<p class="caption"><span class="caption-number">Figura 1.22 </span><span class="caption-text">Empotramiento</span></p>
 </div>
 </div>
 </div>
@@ -874,9 +874,9 @@ Para la determinación de las reacciones será necesario hacer intervenir las de
 <dd></dd>
 </dl>
 <p>Es el exceso de incógnitas respecto al número de ecuaciones de equilibrio.</p>
-<div class="figure align-center" id="id19" style="width: 80%">
+<div class="figure align-center" id="id23" style="width: 80%">
 <span id="ejemploshiperestaticidad"></span><a class="reference internal image-reference" href="../../_images/19.jpg"><img alt="Concepto de deformación" src="../../_images/19.jpg" style="width: 638.4px; height: 286.8px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.19 </span><span class="caption-text">a ) g.h.=0 (isostático); b ) g.h.=1; c ) g.h.=1; d ) g.h.=2; e ) g.h.=3; f ) g.h.=0 (isostático)</span></p>
+<p class="caption"><span class="caption-number">Figura 1.23 </span><span class="caption-text">a ) g.h.=0 (isostático); b ) g.h.=1; c ) g.h.=1; d ) g.h.=2; e ) g.h.=3; f ) g.h.=0 (isostático)</span></p>
 </div>
 </div>
 <div class="section" id="coeficiente-de-seguridad-y-tension-admisible">
@@ -917,9 +917,9 @@ Una vez obtenida la resistencia característica, se toma como tensión de cálc
 </dl>
 <p><span class="math">\(\sigma_{equiv}\)</span>: La que existiría en una probeta de ese material sometido a tracción tal que el coeficiente de seguridad del
 estado tensional dado y el de la probeta a tracción fuera el mismo.</p>
-<div class="figure align-center" id="id20" style="width: 80%">
+<div class="figure align-center" id="id24" style="width: 80%">
 <span id="tensionequivalente"></span><a class="reference internal image-reference" href="../../_images/20.jpg"><img alt="Concepto de deformación" src="../../_images/20.jpg" style="width: 341.6px; height: 178.4px;" /></a>
-<p class="caption"><span class="caption-number">Figura 1.20 </span><span class="caption-text">Tensión equivalente</span></p>
+<p class="caption"><span class="caption-number">Figura 1.24 </span><span class="caption-text">Tensión equivalente</span></p>
 </div>
 </div>
 </div>

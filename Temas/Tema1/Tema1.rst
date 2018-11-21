@@ -204,39 +204,18 @@ se podrán descomponer a su vez en las direcciones de los dos ejes paralelos a l
 
    Tensiones sobre las caras del paralelépıpedo elemental:
 
-Las tensiones en las caras normales a los ejes x, y z son:
+Las tensiones en las caras normales a los ejes "x", "y" y "z" son:
+
 
 .. math::
-   :label: tensionesnormalejex
+   :label: tensionesnormalejes
 
     \begin{equation}
-        \begin{split}
-            \sigma_{nx}^{*} & = \sigma_{nx}+\dfrac{\partial\sigma_{nx}}{\partial x}dx \\
-            \tau_{xy}^{*} & = \tau_{xy}+\dfrac{\partial\tau_{xy}}{\partial x}dx \\
-            \tau_{xz}^{*} & = \tau_{xz}+\dfrac{\partial\tau_{xz}}{\partial x}dx \\
-        \end{split}
-    \end{equation}
-
-.. math::
-   :label: tensionesnormalejey
-
-    \begin{equation}
-        \begin{split}
-            \sigma_{ny}^{*} & = \sigma_{ny}+\dfrac{\partial\sigma_{ny}}{\partial y}dy \\
-            \tau_{yx}^{*} & = \tau_{yx}+\dfrac{\partial\tau_{yx}}{\partial y}dy \\
-            \tau_{yz}^{*} & = \tau_{yz}+\dfrac{\partial\tau_{yz}}{\partial y}dy \\
-        \end{split}
-    \end{equation}
-
-.. math::
-   :label: tensionesnormalejez
-
-    \begin{equation}
-        \begin{split}
-            \sigma_{nz}^{*} & = \sigma_{nz}+\dfrac{\partial\sigma_{nz}}{\partial z}dz \\
-            \tau_{zx}^{*} & = \tau_{zx}+\dfrac{\partial\tau_{zx}}{\partial z}dz \\
-            \tau_{zy}^{*} & = \tau_{zy}+\dfrac{\partial\tau_{zy}}{\partial z}dz \\
-        \end{split}
+        \begin{array}
+            \sigma_{nx}^{*} = \sigma_{nx}+\dfrac{\partial\sigma_{nx}}{\partial x}dx &;& \sigma_{ny}^{*} = \sigma_{ny}+\dfrac{\partial\sigma_{ny}}{\partial y}dy&;&\sigma_{nz}^{*}  = \sigma_{nz}+\dfrac{\partial\sigma_{nz}}{\partial z}dz\\
+            \tau_{xy}^{*} = \tau_{xy}+\dfrac{\partial\tau_{xy}}{\partial x}dx & ;& \tau_{yx}^{*}  = \tau_{yx}+\dfrac{\partial\tau_{yx}}{\partial y}dy &;&\tau_{zx}^{*}  = \tau_{zx}+\dfrac{\partial\tau_{zx}}{\partial z}dz \\
+            \tau_{xz}^{*} = \tau_{xz}+\dfrac{\partial\tau_{xz}}{\partial x}dx &;& \tau_{yz}^{*} = \tau_{yz}+\dfrac{\partial\tau_{yz}}{\partial y}dy&;&\tau_{zy}^{*}  = \tau_{zy}+\dfrac{\partial\tau_{zy}}{\partial z}dz\\
+        \end{array}
     \end{equation}
 
 
@@ -257,7 +236,7 @@ del equilibrio de fuerzas se obtienen las ecuaciones de equilibrio interno:
         \end{split}
     \end{equation}
 
-Sustituyendo :eq:`tensionesnormalejex`, :eq:`tensionesnormalejey` y :eq:`tensionesnormalejez` en :eq:`equilibriointerno`
+Sustituyendo :eq:`tensionesnormalejes` en :eq:`equilibriointerno`
 se llega a:
 
 
@@ -647,19 +626,50 @@ sistemas de fuerzas que sean estáticamente equivalentes al dado.
 Relación entre tensión y de deformación. Ensayo de tracción
 ___________________________________________________________
 
-Dado que deformación y tensión son causa y efecto las matrices de tensiones y de
-deformación estén relacionadas entre sí.
+.. _maquinatracción:
+.. figure:: Figuras/9-1.jpg
+   :figwidth: 80%
+   :scale: 30 %
+   :align: center
+
+   Máquina empleada para realizar pruebas a tensión en probeta.
+
+.. _probeta:
+.. figure:: Figuras/9-2.jpg
+   :figwidth: 80%
+   :scale: 30 %
+   :align: center
+
+   Probeta típica para ensayo o prueba de tensión.
+
+.. _probetaductil:
+.. figure:: Figuras/9-3.jpg
+   :figwidth: 80%
+   :scale: 30 %
+   :align: center
+
+   Probeta después del ensayo de un material dúctil.
+
+.. _probetafragíl:
+.. figure:: Figuras/9-3.jpg
+   :figwidth: 80%
+   :scale: 30 %
+   :align: center
+
+   Probeta después del ensayo de un material frágil.
 
 .. _ensayoacero:
 .. figure:: Figuras/9.jpg
    :figwidth: 80%
    :scale: 40 %
-   :alt: Concepto de deformación
    :align: center
 
    Ensayo de tracción en un probeta de acero
 
 Se observa una zona de elasticidad proporcional en la que la relación tensión-deformación es lineal.
+
+Dado que deformación y tensión son causa y efecto, las matrices de tensiones y de
+deformación estén relacionadas entre sí.
 
 .. glossary::
 
