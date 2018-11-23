@@ -89,7 +89,9 @@ numfig = True
 #
 # html_theme = 'alabaster'
 #html_theme = 'classic'
-html_theme = 'bizstyle'
+#html_theme = 'bizstyle'
+html_theme_path = ['Templates']
+html_theme = 'better'
 
 #html_theme_options = {
 #    "rightsidebar": "false",
